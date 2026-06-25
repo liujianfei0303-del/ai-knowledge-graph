@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 技术体系知识图谱 — 完整参考文档</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background: #0f0f1a;
+    color: #e0e0e8;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 28px; font-weight: 700; color: #f0f0ff; margin-bottom: 6px; letter-spacing: -0.3px; }
+  .subtitle { color: #8080a0; font-size: 15px; margin-bottom: 40px; }
+  .stats { display: flex; gap: 24px; margin-bottom: 48px; flex-wrap: wrap; }
+  .stat-card {
+    background: linear-gradient(135deg, rgba(60,60,120,0.15), rgba(40,40,80,0.1));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 16px 24px;
+    flex: 1;
+    min-width: 120px;
+  }
+  .stat-card .num { font-size: 28px; font-weight: 700; color: #88bbff; }
+  .stat-card .label { font-size: 12px; color: #8080a0; margin-top: 4px; }
+  .toc { margin-bottom: 48px; }
+  .toc h2 { font-size: 16px; color: #a0a0c0; margin-bottom: 12px; font-weight: 500; }
+  .toc a { color: #88bbff; text-decoration: none; font-size: 14px; display: block; padding: 3px 0; }
+  .toc a:hover { color: #aaddff; }
+  .toc-layer { margin-left: 12px; }
+  .layer-section { margin-bottom: 48px; }
+  .layer-header {
+    background: linear-gradient(135deg, rgba(60,60,120,0.2), rgba(40,40,80,0.1));
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .layer-header h2 { font-size: 20px; color: #f0f0ff; margin-bottom: 4px; }
+  .layer-header .meta { font-size: 12px; color: #8080a0; }
+  .node-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+  .node-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: background 0.2s;
+  }
+  .node-card:hover { background: rgba(255,255,255,0.05); }
+  .node-card .name { font-size: 14px; color: #e0e0e8; font-weight: 500; }
+  .node-card .tags { margin-top: 3px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 10px; padding: 1px 8px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08); }
+  .tag-concept { background: rgba(100,180,255,0.1); color: #88bbff; border-color: rgba(100,180,255,0.15); }
+  .tag-algorithm { background: rgba(255,180,80,0.1); color: #ffbb66; border-color: rgba(255,180,80,0.15); }
+  .tag-tool { background: rgba(80,220,160,0.1); color: #66dd99; border-color: rgba(80,220,160,0.15); }
+  .tag-framework { background: rgba(200,130,255,0.1); color: #cc88ff; border-color: rgba(200,130,255,0.15); }
+  .tag-technique { background: rgba(255,100,100,0.1); color: #ff8888; border-color: rgba(255,100,100,0.15); }
+  .tag-method { background: rgba(100,220,220,0.1); color: #66dddd; border-color: rgba(100,220,220,0.15); }
+  .tag-standard { background: rgba(180,180,180,0.1); color: #bbbbcc; border-color: rgba(180,180,180,0.15); }
+  .tier { font-size: 10px; color: #606080; }
+  .btt { position: fixed; bottom: 24px; right: 24px; background: rgba(60,60,120,0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #8080a0; font-size: 18px; backdrop-filter: blur(8px); transition: all 0.2s; }
+  .btt:hover { background: rgba(80,80,160,0.6); color: #c0c0e0; }
+  .footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: #606080; }
+  .footer code { color: #88bbff; }
+  @media (max-width: 600px) {
+    .node-list { grid-template-columns: 1fr; }
+    .stats { flex-direction: column; }
+    .container { padding: 20px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>AI 技术体系知识图谱</h1>
+<p class="subtitle">完整参考文档 — 121 个节点 · 7 层架构 + 2 横切维度 · 279 条关联关系</p>
+
+<div class="stats">
+  <div class="stat-card"><div class="num">121</div><div class="label">知识节点</div></div>
+  <div class="stat-card"><div class="num">279</div><div class="label">关联关系</div></div>
+  <div class="stat-card"><div class="num">7+2</div><div class="label">层级结构</div></div>
+  <div class="stat-card"><div class="num">Tier 2</div><div class="label">全部节点精化完成</div></div>
+</div>
+
+<div class="toc"><h2>目录</h2>
+<a class="toc-layer" href="#Layer-0-数学基础">  数学基础 (16 个节点)</a>
+<a class="toc-layer" href="#Layer-1-数据工程">  数据工程 (4 个节点)</a>
+<a class="toc-layer" href="#Layer-2C-强化学习">  强化学习 (7 个节点)</a>
+<a class="toc-layer" href="#Layer-3-化工与过程控制">  化工与过程控制 (27 个节点)</a>
+<a class="toc-layer" href="#Layer-4-Agent生态">  Agent 生态 (6 个节点)</a>
+<a class="toc-layer" href="#Layer-5-MLOps">  MLOps (13 个节点)</a>
+</div>
+
+<div class="layer-section" id="Layer-0-数学基础">
+  <div class="layer-header">
+    <h2>数学基础</h2>
+    <div class="meta">16 个节点 · algorithm&times;6 · concept&times;10</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">Fisher信息</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">KKT条件</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">KV Cache</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">互信息</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">交叉熵</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">假设检验</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">凸优化</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">奇异值分解</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">张量基础</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">梯度下降</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">梯度下降家族</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">熵与KL散度</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">特征值与奇异值</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">矩阵分解(SVD)</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">贝叶斯推断</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">马尔可夫链蒙特卡洛</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="Layer-1-数据工程">
+  <div class="layer-header">
+    <h2>数据工程</h2>
+    <div class="meta">4 个节点 · algorithm&times;3 · framework&times;1</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">ETL管道</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">主动学习</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">主成分分析</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">联邦学习</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="Layer-2C-强化学习">
+  <div class="layer-header">
+    <h2>强化学习</h2>
+    <div class="meta">7 个节点 · algorithm&times;5 · concept&times;2</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">Bellman方程</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">DQN</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">MAPPO</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">MDP</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">PPO</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Q-Learning</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">SAC</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="Layer-3-化工与过程控制">
+  <div class="layer-header">
+    <h2>化工与过程控制</h2>
+    <div class="meta">27 个节点 · algorithm&times;9 · concept&times;18</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">DMC</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">HAZOP分析</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">MPC</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">PCA故障检测</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">PID控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">PRBS测试</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">SIL</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Smith预估器</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">串级控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">传递函数</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">内模控制IMC</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">分程控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">前馈控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">动态优化</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">实时优化RTO</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">报警管理</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">数据驱动FDD</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">数据驱动RTO</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">机理建模</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">比值控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">混合建模</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">系统辨识</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">经济MPC</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">自适应控制</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">调度优化</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">软测量</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">鲁棒MPC</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="Layer-4-Agent生态">
+  <div class="layer-header">
+    <h2>Agent 生态</h2>
+    <div class="meta">6 个节点 · benchmark&times;1 · concept&times;2 · framework&times;3</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">CrewAI</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Function Calling</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">LangChain</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">LangGraph</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">MCP协议</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">SWE-bench</div>
+      <div class="tags">
+        <span class="tag tag-concept">benchmark</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="Layer-5-MLOps">
+  <div class="layer-header">
+    <h2>MLOps</h2>
+    <div class="meta">13 个节点 · algorithm&times;1 · concept&times;3 · framework&times;2 · tool&times;7</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name">"Weights & Biases"</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Airflow</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">HuggingFace Hub</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Kubeflow</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">MLflow</div>
+      <div class="tags">
+        <span class="tag tag-framework">framework</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Optuna</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Triton Inference Server</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">vLLM</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">数据漂移检测</div>
+      <div class="tags">
+        <span class="tag tag-algorithm">algorithm</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">模型卡</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">模型退化监控</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">模型验证门禁</div>
+      <div class="tags">
+        <span class="tag tag-concept">concept</span>
+        <span class="tier">Tier 2</span>
+      </div>
+    </div>
+
+    <div class="node-card">
+      <div class="name">Docker</div>
+      <div class="tags">
+        <span class="tag tag-tool">tool</span>
+        <span class="tier">Tier 1</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="layer-section" id="edge-summary">
+  <div class="layer-header">
+    <h2>关联关系概览</h2>
+    <div class="meta">5 种关联类型</div>
+  </div>
+  <div class="node-list">
+
+    <div class="node-card">
+      <div class="name"><strong>related</strong> (279 条)</div>
+      <div class="tags"><span class="tier">关联：A 与 B 有联系</span></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <p>生成时间：2026-06-24 | 数据来源：AI 技术体系知识图谱项目</p>
+  <p>项目路径：<code>D:\00_Hermes\AI_Knowledge_Graph</code></p>
+  <p>Quartz 交互式站点（含 D3 力导向图谱）：<code>D:\00_Hermes\Quartz_Site\public\</code></p>
+</div>
+
+</div>
+<a class="btt" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">&#8593;</a>
+</body>
+</html>
