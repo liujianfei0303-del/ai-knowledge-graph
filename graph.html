@@ -57,6 +57,7 @@ svg { width: 100%; height: 100%; display: block; }
 <div class="controls">
 <span>滚轮缩放 · 拖拽漫游 · 点击查看详情</span>
 <button onclick="resetZoom()">重置视图</button>
+<a href="./" style="color:#66aaff;text-decoration:none;font-size:12px;padding:4px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:12px;">← 返回主页</a>
 <span id="nodeCount"></span><span id="linkCount"></span>
 </div>
 <div class="detail-panel" id="detailPanel">
@@ -102,12 +103,12 @@ node.on('mouseover',function(ev,d){
 var s=new Set();graph.links.forEach(function(l){var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;if(a===d.id||b===d.id){s.add(a);s.add(b);}});
 node.style('opacity',n=>s.has(n.id)||n.id===d.id?1:0.15);
 link.style('opacity',l=>{var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;return a===d.id||b===d.id?0.6:0.08;});
-lbl.style('display',n=>s.has(n.id)||n.id===d.id?'block':'none');
+lbl.style('display',n=>s.has(n.id)||n.id===d.id?'block':'none').attr('fill',n=>n.id===d.id?'#ffffff':(s.has(n.id)?'#66aaff':'#d0d0e0'));
 var cl=graph.links.filter(l=>{var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;return a===d.id||b===d.id;});
 var ot=cl.map(l=>{var a=typeof l.source==='object'?l.source.id:l.source;return a===d.id?graph.nodes.find(n=>n.id===l.target.id):graph.nodes.find(n=>n.id===l.source.id);}).filter(t=>t).map(t=>t.title).filter(t=>t!==d.title).join(' · ');
 tip.style('display','block').style('left',(ev.clientX-container.getBoundingClientRect().left+14)+'px').style('top',(ev.clientY-container.getBoundingClientRect().top-10)+'px').html('<div class=\"title\">'+d.title+'</div><div class=\"meta\">'+d.layerDisplay+' · '+(TYPE_NAMES[d.type]||d.type)+(d.tier?' · Tier '+d.tier:'')+'</div>'+(d.desc?'<div class=\"desc\">'+d.desc+'</div>':'')+(cl.length>0?'<div class=\"links\">关联 '+cl.length+' 个节点</div>':''));
 });
-node.on('mouseout',function(){node.style('opacity',1);link.style('opacity',0.3);tip.style('display','none');lbl.style('display',d=>d.tier===1?'block':'none');});
+node.on('mouseout',function(){node.style('opacity',1);link.style('opacity',0.3);tip.style('display','none');lbl.style('display',d=>d.tier===1?'block':'none').attr('fill','#d0d0e0');});
 node.on('click',function(ev,d){openPanel(d);});
 var lh='<h3>按层着色</h3>';LAYER_ORDER.forEach(function(l){var c=graph.nodes.filter(function(n){return n.layerDisplay===l;}).length;if(c>0){lh+='<div class=\"legend-item\" onclick=\"filterLayer(\''+l.replace(/'/g,"\\'")+'\')\"><span class=\"legend-color\" style=\"background:'+(LAYER_COLORS[l]||'#666688')+'\"></span><span class=\"legend-label\">'+l+'</span><span class=\"legend-count\">'+c+'</span></div>';}});
 document.getElementById('legend').innerHTML=lh;
@@ -118,8 +119,8 @@ document.getElementById('dTitle').textContent=d.title;
 document.getElementById('dMeta').textContent=(TYPE_NAMES[d.type]||d.type)+' · '+d.layerDisplay+' · Tier '+(d.tier||2);
 document.getElementById('dDesc').textContent=d.desc||'暂无详细描述';
 var cl=graphData.links.filter(function(l){var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;return a===d.id||b===d.id;});
-var ot=cl.map(function(l){var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;return a===d.id?graphData.nodes.find(n=>n.id===b):graphData.nodes.find(n=>n.id===a);}).filter(t=>t&&t.title!==d.title).map(t=>t.title);
-document.getElementById('dLinks').innerHTML=ot.length?'<strong>关联节点：</strong><br>'+ot.map(t=>'<span>→ '+t+'</span>').join(''):'<span>无关联节点</span>';
+var ot=cl.map(function(l){var a=typeof l.source==='object'?l.source.id:l.source,b=typeof l.target==='object'?l.target.id:l.target;return a===d.id?graphData.nodes.find(n=>n.id===b):graphData.nodes.find(n=>n.id===a);}).filter(t=>t&&t.title!==d.title);
+document.getElementById('dLinks').innerHTML=ot.length?'<strong>关联节点：</strong><br>'+ot.map(t=>'<a href="'+t.url+'" target="_blank" style="display:block;padding:2px 0;color:#66aaff;text-decoration:none;" onmouseover="this.style.textDecoration=\'underline\'" onmouseout="this.style.textDecoration=\'none\'">→ '+t.title+'</a>').join(''):'<span>无关联节点</span>';
 document.getElementById('detailPanel').classList.add('open');
 }
 function closePanel(){document.getElementById('detailPanel').classList.remove('open');}
