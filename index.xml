@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>AI 技术体系知识图谱</title>
+      <link>https://liujianfei0303-del.github.io/ai-knowledge-graph</link>
+      <description>Last 10 notes on AI 技术体系知识图谱</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>AI_Knowledge_Graph</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/ai_knowledge_graph/</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/ai_knowledge_graph/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Mon, 29 Jun 2026 14:43:17 GMT</pubDate>
+  </item><item>
+    <title>2B-1</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/layer-2b-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/2b-1/</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/layer-2b-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/2b-1/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Mon, 29 Jun 2026 14:43:17 GMT</pubDate>
+  </item><item>
+    <title>2B-2</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/layer-2b-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/2b-2/</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/layer-2b-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/2b-2/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Mon, 29 Jun 2026 14:43:17 GMT</pubDate>
+  </item><item>
+    <title>标签索引</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/tags/</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/tags/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Mon, 29 Jun 2026 14:43:17 GMT</pubDate>
+  </item><item>
+    <title>AI 技术体系知识图谱</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/</guid>
+    <description><![CDATA[ 系统性覆盖 AI 技术全栈的知识图谱 — 从数学基础到 MLOps，从经典机器学习到 Agent 生态 ]]></description>
+    <pubDate>Mon, 29 Jun 2026 14:39:58 GMT</pubDate>
+  </item><item>
+    <title>稀疏自编码器</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E7%A8%80%E7%96%8F%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E7%A8%80%E7%96%8F%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8</guid>
+    <description><![CDATA[ 稀疏自编码器 核心要点 稀疏自编码器（Sparse Autoencoder, SAE）是一种无监督特征学习的神经网络结构，在可解释性领域的核心应用是将神经网络的隐藏状态（activation vector）分解为稀疏的、人类可理解的”原子特征”（monosemantic features —— 每个特征对应一个独立的概念或模式）。SAE 的架构由一个编码器和一个解码器组成：编码器 E: ℝ^d → ℝ^M 将 d 维的隐藏状态映射到 M 维的稀疏特征空间（M &gt;&gt; d，通常是 d 的 8-32 倍），解码器 D: ℝ^M → ℝ^d 从稀疏特征重建原始激活值。训练损失包括重建误差（... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:29:34 GMT</pubDate>
+  </item><item>
+    <title>激活工程</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E6%BF%80%E6%B4%BB%E5%B7%A5%E7%A8%8B</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E6%BF%80%E6%B4%BB%E5%B7%A5%E7%A8%8B</guid>
+    <description><![CDATA[ 激活工程 核心要点 激活工程（Activation Engineering）是一种通过直接操控神经网络中间层激活值来引导模型行为的可解释性技术。与提示工程（Prompt Engineering）在输入侧操控不同——激活工程在模型内部的表示空间（Representation Space）中操作，在推理过程中对中间层的隐藏状态向量进行插入、平移、缩放或擦除操作，以达到改变模型输出方向、增强/抑制某些行为、或消除不良输出模式的目的。激活工程的核心理论假设是 superposition hypothesis（超位置假说）——神经网络的每个神经元编码了多个重叠的概念（neural polysemanti... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:29:34 GMT</pubDate>
+  </item><item>
+    <title>差分隐私</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%B7%AE%E5%88%86%E9%9A%90%E7%A7%81</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%B7%AE%E5%88%86%E9%9A%90%E7%A7%81</guid>
+    <description><![CDATA[ 差分隐私 核心要点 差分隐私（Differential Privacy, DP）是隐私保护计算的黄金标准形式化框架，由 Dwork、McSherry、Nissim 和 Smith 于 2006 年提出，核心思想是在对数据集的分析结果中添加适当量的噪声，使得无法通过分析结果推断任何单个个体的信息是否存在或取值。形式化定义：随机机制 M 满足 ε-差分隐私，当且仅当对任意仅相差一条记录的相邻数据集 D 和 D’，以及任意输出子集 S ⊆ Range(M)，有 Pr[M(D) ∈ S] ≤ e^ε · Pr[M(D’) ∈ S]。参数 ε（隐私预算）控制隐私保护强度——ε 越小保护越强（添加噪声越多... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:29:34 GMT</pubDate>
+  </item><item>
+    <title>对抗样本</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%AF%B9%E6%8A%97%E6%A0%B7%E6%9C%AC</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%AF%B9%E6%8A%97%E6%A0%B7%E6%9C%AC</guid>
+    <description><![CDATA[ 对抗样本 核心要点 对抗样本（Adversarial Examples）是向正常输入中添加人眼不可察觉的微小扰动后导致深度学习模型做出错误预测的输入样本，由 Szegedy 等人于 2014 年首次发现。其关键特征包括：可迁移性——对一个模型生成的对抗样本能以高概率欺骗另一个不同架构的模型（跨模型可迁移性，使得黑盒攻击即使不知道模型结构也能生效）；通用性——同一个扰动模式（Universal Adversarial Perturbation）可以欺骗同一模型对多个不同输入的预测；以及不可察觉性——扰动的 Lp-norm 通常限制在很小范围内（如像素值 ±8/255 在 [0,1] 空间内），人... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:29:34 GMT</pubDate>
+  </item><item>
+    <title>偏见检测</title>
+    <link>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%81%8F%E8%A7%81%E6%A3%80%E6%B5%8B</link>
+    <guid>https://liujianfei0303-del.github.io/ai-knowledge-graph/%E6%A8%AA%E5%88%87b-ai%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7/%E5%81%8F%E8%A7%81%E6%A3%80%E6%B5%8B</guid>
+    <description><![CDATA[ 偏见检测 核心要点 偏见检测（Bias Detection）是负责任的 AI（Responsible AI）中的关键环节，旨在系统性地发现机器学习模型中存在的系统性偏差和歧视性模式，确保 AI 系统在不同社会群体间做出公平的决策。AI 偏见的来源贯穿模型全生命周期：数据偏见（Data Bias，训练数据中特定群体的代表性不足或标签噪声导致，如历史招聘数据中男性候选人的比例偏高）、标注偏见（Annotation Bias，标注者的主观偏见传导至标签，如情感分析中非裔美国人方言被更频繁标注为”愤怒”）、算法偏见（Algorithmic Bias，模型架构或训练过程放大现有偏差，如预测警务模型中历史... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 01:29:34 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

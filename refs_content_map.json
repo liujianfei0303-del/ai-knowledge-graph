@@ -1,0 +1,1402 @@
+{
+  "Layer-0-数学基础/SVD.md": {
+    "references": [
+      {
+        "title": "Matrix Computations, 4th Edition",
+        "type": "book",
+        "author": "Golub, G.H. & Van Loan, C.F.",
+        "year": 2013,
+        "url": "https://doi.org/10.1137/1.9781421407944"
+      }
+    ]
+  },
+  "Layer-0-数学基础/MCMC.md": {
+    "references": [
+      {
+        "title": "Monte Carlo Statistical Methods, 2nd Edition",
+        "type": "book",
+        "author": "Robert, C.P. & Casella, G.",
+        "year": 2004,
+        "url": "https://doi.org/10.1007/978-1-4419-1576-0"
+      }
+    ]
+  },
+  "Layer-0-数学基础/交叉熵.md": {
+    "references": [
+      {
+        "title": "Elements of Information Theory, 2nd Edition",
+        "type": "book",
+        "author": "Cover, T.M. & Thomas, J.A.",
+        "year": 2006,
+        "url": "https://doi.org/10.1002/047174882X"
+      }
+    ]
+  },
+  "Layer-0-数学基础/凸优化.md": {
+    "references": [
+      {
+        "title": "Convex Optimization",
+        "type": "book",
+        "author": "Boyd, S. & Vandenberghe, L.",
+        "year": 2004,
+        "url": "https://web.stanford.edu/~boyd/cvxbook/"
+      }
+    ]
+  },
+  "Layer-0-数学基础/梯度下降.md": {
+    "references": [
+      {
+        "title": "Large-Scale Machine Learning with Stochastic Gradient Descent",
+        "type": "paper",
+        "author": "Bottou, L.",
+        "year": 2010,
+        "url": "https://doi.org/10.1007/978-3-7908-2604-3_16"
+      },
+      {
+        "title": "A Stochastic Approximation Method",
+        "type": "paper",
+        "author": "Robbins, H. & Monro, S.",
+        "year": 1951,
+        "url": "https://doi.org/10.1214/aoms/1177729586"
+      }
+    ]
+  },
+  "Layer-0-数学基础/熵与KL散度.md": {
+    "references": [
+      {
+        "title": "Elements of Information Theory, 2nd Edition",
+        "type": "book",
+        "author": "Cover, T.M. & Thomas, J.A.",
+        "year": 2006,
+        "url": "https://doi.org/10.1002/047174882X"
+      },
+      {
+        "title": "Information Theory, Inference, and Learning Algorithms",
+        "type": "book",
+        "author": "MacKay, D.J.C.",
+        "year": 2003,
+        "url": "https://doi.org/10.1017/CBO9780511803477"
+      }
+    ]
+  },
+  "Layer-0-数学基础/贝叶斯推断.md": {
+    "references": [
+      {
+        "title": "Bayesian Data Analysis, 3rd Edition",
+        "type": "book",
+        "author": "Gelman, A., Carlin, J.B., Stern, H.S., Dunson, D.B., Vehtari, A. & Rubin, D.B.",
+        "year": 2013,
+        "url": "https://doi.org/10.1201/b16018"
+      }
+    ]
+  },
+  "Layer-0-数学基础/KV Cache.md": {
+    "references": [
+      {
+        "title": "Attention Is All You Need",
+        "type": "paper",
+        "author": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L. & Polosukhin, I.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+        "type": "paper",
+        "author": "Shazeer, N.",
+        "year": 2019,
+        "url": "https://arxiv.org/abs/1911.02150"
+      },
+      {
+        "title": "Efficiently Scaling Transformer Inference",
+        "type": "paper",
+        "author": "Pope, R., Douglas, S., Chowdhery, A., Devlin, J., Bradbury, J., Heek, J., Xiao, M., Agrawal, S. & Dean, J.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2211.05102"
+      }
+    ]
+  },
+  "Layer-1-数据工程/ETL.md": {
+    "references": [
+      {
+        "title": "The Data Warehouse Toolkit, 3rd Edition",
+        "type": "book",
+        "author": "Kimball, R. & Ross, M.",
+        "year": 2013,
+        "url": "https://doi.org/10.1002/9781118872260"
+      }
+    ]
+  },
+  "Layer-1-数据工程/PCA.md": {
+    "references": [
+      {
+        "title": "Principal Component Analysis, 2nd Edition",
+        "type": "book",
+        "author": "Jolliffe, I.T.",
+        "year": 2002,
+        "url": "https://doi.org/10.1007/978-1-4757-3157-6"
+      }
+    ]
+  },
+  "Layer-1-数据工程/主动学习.md": {
+    "references": [
+      {
+        "title": "Active Learning Literature Survey",
+        "type": "paper",
+        "author": "Settles, B.",
+        "year": 2009,
+        "url": "https://doi.org/10.2200/S00193ED1V01Y200904AIM018"
+      }
+    ]
+  },
+  "Layer-1-数据工程/联邦学习.md": {
+    "references": [
+      {
+        "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+        "type": "paper",
+        "author": "McMahan, H.B., Moore, E., Ramage, D., Hampson, S. & y Arcas, B.A.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1602.05629"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/Boosting.md": {
+    "references": [
+      {
+        "title": "Greedy Function Approximation: A Gradient Boosting Machine",
+        "type": "paper",
+        "author": "Friedman, J.H.",
+        "year": 2001,
+        "url": "https://doi.org/10.1214/aos/1013203451"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/CNN.md": {
+    "references": [
+      {
+        "title": "Gradient-Based Learning Applied to Document Recognition",
+        "type": "paper",
+        "author": "LeCun, Y., Bottou, L., Bengio, Y. & Haffner, P.",
+        "year": 1998,
+        "url": "https://doi.org/10.1109/5.726791"
+      },
+      {
+        "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+        "type": "paper",
+        "author": "Krizhevsky, A., Sutskever, I. & Hinton, G.E.",
+        "year": 2012,
+        "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/KMeans.md": {
+    "references": [
+      {
+        "title": "Some Methods for Classification and Analysis of Multivariate Observations",
+        "type": "paper",
+        "author": "MacQueen, J.",
+        "year": 1967,
+        "url": "https://projecteuclid.org/proceedings/berkeley-symposium-on-mathematical-statistics-and-probability/Proceedings-of-the-Fifth-Berkeley-Symposium-on-Mathematical-Statistics-and/Chapter/Some-methods-for-classification-and-analysis-of-multivariate-observations/bsmsp/1200512992"
+      },
+      {
+        "title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd Edition",
+        "type": "book",
+        "author": "Hastie, T., Tibshirani, R. & Friedman, J.",
+        "year": 2009,
+        "url": "https://doi.org/10.1007/978-0-387-84858-7"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/LogisticRegression.md": {
+    "references": [
+      {
+        "title": "Applied Logistic Regression, 3rd Edition",
+        "type": "book",
+        "author": "Hosmer, D.W., Lemeshow, S. & Sturdivant, R.X.",
+        "year": 2013,
+        "url": "https://doi.org/10.1002/9781118548387"
+      },
+      {
+        "title": "Categorical Data Analysis, 3rd Edition",
+        "type": "book",
+        "author": "Agresti, A.",
+        "year": 2013,
+        "url": "https://doi.org/10.1002/9780470594001"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/SVM.md": {
+    "references": [
+      {
+        "title": "Support-Vector Networks",
+        "type": "paper",
+        "author": "Cortes, C. & Vapnik, V.",
+        "year": 1995,
+        "url": "https://doi.org/10.1007/BF00994018"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/XGBoost.md": {
+    "references": [
+      {
+        "title": "XGBoost: A Scalable Tree Boosting System",
+        "type": "paper",
+        "author": "Chen, T. & Guestrin, C.",
+        "year": 2016,
+        "url": "https://doi.org/10.1145/2939672.2939785"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/t-SNE.md": {
+    "references": [
+      {
+        "title": "Visualizing Data using t-SNE",
+        "type": "paper",
+        "author": "van der Maaten, L. & Hinton, G.",
+        "year": 2008,
+        "url": "https://doi.org/10.1162/jmlr.2008.9.2579"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/决策树.md": {
+    "references": [
+      {
+        "title": "Classification and Regression Trees",
+        "type": "book",
+        "author": "Breiman, L., Friedman, J.H., Olshen, R.A. & Stone, C.J.",
+        "year": 1984,
+        "url": "https://doi.org/10.1201/9781315139470"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/贝叶斯优化.md": {
+    "references": [
+      {
+        "title": "Taking the Human Out of the Loop: A Review of Bayesian Optimization",
+        "type": "paper",
+        "author": "Shahriari, B., Swersky, K., Wang, Z., Adams, R.P. & de Freitas, N.",
+        "year": 2016,
+        "url": "https://doi.org/10.1109/JPROC.2015.2494218"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/随机森林.md": {
+    "references": [
+      {
+        "title": "Random Forests",
+        "type": "paper",
+        "author": "Breiman, L.",
+        "year": 2001,
+        "url": "https://doi.org/10.1023/A:1010933404324"
+      }
+    ]
+  },
+  "Layer-2A-经典ML/高斯过程.md": {
+    "references": [
+      {
+        "title": "Gaussian Processes for Machine Learning",
+        "type": "book",
+        "author": "Rasmussen, C.E. & Williams, C.K.I.",
+        "year": 2006,
+        "url": "https://doi.org/10.7551/mitpress/3206.001.0001"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/MLP.md": {
+    "references": [
+      {
+        "title": "Learning representations by back-propagating errors",
+        "type": "paper",
+        "author": "Rumelhart, D.E., Hinton, G.E. & Williams, R.J.",
+        "year": 1986,
+        "url": "https://doi.org/10.1038/323533a0"
+      },
+      {
+        "title": "Pattern Recognition and Machine Learning",
+        "type": "book",
+        "author": "Bishop, C.M.",
+        "year": 2006,
+        "url": "https://link.springer.com/book/9780387310732"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/RNN.md": {
+    "references": [
+      {
+        "title": "Learning representations by back-propagating errors",
+        "type": "paper",
+        "author": "Rumelhart, D.E., Hinton, G.E. & Williams, R.J.",
+        "year": 1986,
+        "url": "https://doi.org/10.1038/323533a0"
+      },
+      {
+        "title": "Finding Structure in Time",
+        "type": "paper",
+        "author": "Elman, J.L.",
+        "year": 1990,
+        "url": "https://doi.org/10.1207/s15516709cog1402_1"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/LSTM.md": {
+    "references": [
+      {
+        "title": "Long Short-Term Memory",
+        "type": "paper",
+        "author": "Hochreiter, S. & Schmidhuber, J.",
+        "year": 1997,
+        "url": "https://doi.org/10.1162/neco.1997.9.8.1735"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/ResNet.md": {
+    "references": [
+      {
+        "title": "Deep Residual Learning for Image Recognition",
+        "type": "paper",
+        "author": "He, K., Zhang, X., Ren, S. & Sun, J.",
+        "year": 2016,
+        "url": "https://doi.org/10.1109/CVPR.2016.90"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/残差连接.md": {
+    "references": [
+      {
+        "title": "Deep Residual Learning for Image Recognition",
+        "type": "paper",
+        "author": "He, K., Zhang, X., Ren, S. & Sun, J.",
+        "year": 2016,
+        "url": "https://doi.org/10.1109/CVPR.2016.90"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/BatchNorm.md": {
+    "references": [
+      {
+        "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+        "type": "paper",
+        "author": "Ioffe, S. & Szegedy, C.",
+        "year": 2015,
+        "url": "https://doi.org/10.48550/arXiv.1502.03167"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/Dropout.md": {
+    "references": [
+      {
+        "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+        "type": "paper",
+        "author": "Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. & Salakhutdinov, R.",
+        "year": 2014,
+        "url": "https://jmlr.org/papers/v15/srivastava14a.html"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/GAN.md": {
+    "references": [
+      {
+        "title": "Generative Adversarial Nets",
+        "type": "paper",
+        "author": "Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A. & Bengio, Y.",
+        "year": 2014,
+        "url": "https://doi.org/10.48550/arXiv.1406.2661"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/Adam.md": {
+    "references": [
+      {
+        "title": "Adam: A Method for Stochastic Optimization",
+        "type": "paper",
+        "author": "Kingma, D.P. & Ba, J.",
+        "year": 2015,
+        "url": "https://doi.org/10.48550/arXiv.1412.6980"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/GELU.md": {
+    "references": [
+      {
+        "title": "Gaussian Error Linear Units (GELUs)",
+        "type": "paper",
+        "author": "Hendrycks, D. & Gimpel, K.",
+        "year": 2016,
+        "url": "https://doi.org/10.48550/arXiv.1606.08415"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-1/激活函数.md": {
+    "references": [
+      {
+        "title": "Deep Learning",
+        "type": "book",
+        "author": "Goodfellow, I., Bengio, Y. & Courville, A.",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      {
+        "title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+        "type": "paper",
+        "author": "Nair, V. & Hinton, G.E.",
+        "year": 2010,
+        "url": "https://doi.org/10.5555/3104322.3104425"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/Transformer.md": {
+    "references": [
+      {
+        "title": "Attention Is All You Need",
+        "type": "paper",
+        "author": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L. & Polosukhin, I.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1706.03762"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/Self-Attention.md": {
+    "references": [
+      {
+        "title": "Attention Is All You Need",
+        "type": "paper",
+        "author": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L. & Polosukhin, I.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1706.03762"
+      },
+      {
+        "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "type": "paper",
+        "author": "Bahdanau, D., Cho, K. & Bengio, Y.",
+        "year": 2015,
+        "url": "https://doi.org/10.48550/arXiv.1409.0473"
+      },
+      {
+        "title": "A Structured Self-Attentive Sentence Embedding",
+        "type": "paper",
+        "author": "Lin, Z., Feng, M., Santos, C.N., Yu, M., Xiang, B., Zhou, B. & Bengio, Y.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1703.03130"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/BERT.md": {
+    "references": [
+      {
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "type": "paper",
+        "author": "Devlin, J., Chang, M.-W., Lee, K. & Toutanova, K.",
+        "year": 2019,
+        "url": "https://doi.org/10.48550/arXiv.1810.04805"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/GPT.md": {
+    "references": [
+      {
+        "title": "Improving Language Understanding by Generative Pre-Training",
+        "type": "paper",
+        "author": "Radford, A., Narasimhan, K., Salimans, T. & Sutskever, I.",
+        "year": 2018,
+        "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+      },
+      {
+        "title": "Language Models are Few-Shot Learners",
+        "type": "paper",
+        "author": "Brown, T.B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D.",
+        "year": 2020,
+        "url": "https://doi.org/10.48550/arXiv.2005.14165"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/RLHF.md": {
+    "references": [
+      {
+        "title": "Deep Reinforcement Learning from Human Preferences",
+        "type": "paper",
+        "author": "Christiano, P., Leike, J., Brown, T.B., Martic, M., Legg, S. & Amodei, D.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1706.03741"
+      },
+      {
+        "title": "Training language models to follow instructions with human feedback",
+        "type": "paper",
+        "author": "Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C.L., Mishkin, P., ... & Lowe, R.",
+        "year": 2022,
+        "url": "https://doi.org/10.48550/arXiv.2203.02155"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/DPO.md": {
+    "references": [
+      {
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "type": "paper",
+        "author": "Rafailov, R., Sharma, A., Mitchell, E., Manning, C.D., Ermon, S. & Finn, C.",
+        "year": 2023,
+        "url": "https://doi.org/10.48550/arXiv.2305.18290"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/CoT.md": {
+    "references": [
+      {
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "type": "paper",
+        "author": "Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. & Zhou, D.",
+        "year": 2022,
+        "url": "https://doi.org/10.48550/arXiv.2201.11903"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/MoE.md": {
+    "references": [
+      {
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "type": "paper",
+        "author": "Shazeer, N., Mirhoseini, A., Maziarz, K., Davis, A., Le, Q., Hinton, G. & Dean, J.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1701.06538"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/RAG.md": {
+    "references": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "type": "paper",
+        "author": "Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D.",
+        "year": 2020,
+        "url": "https://doi.org/10.48550/arXiv.2005.11401"
+      }
+    ]
+  },
+  "Layer-2B-深度学习/2B-2/位置编码.md": {
+    "references": [
+      {
+        "title": "Attention Is All You Need",
+        "type": "paper",
+        "author": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, L. & Polosukhin, I.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1706.03762"
+      },
+      {
+        "title": "Self-Attention with Relative Position Representations",
+        "type": "paper",
+        "author": "Shaw, P., Uszkoreit, J. & Vaswani, A.",
+        "year": 2018,
+        "url": "https://doi.org/10.48550/arXiv.1803.02155"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/MDP.md": {
+    "references": [
+      {
+        "title": "Dynamic Programming",
+        "type": "book",
+        "author": "Bellman, R.",
+        "year": 1957,
+        "url": "https://doi.org/10.1515/9781400824708"
+      },
+      {
+        "title": "Reinforcement Learning: An Introduction",
+        "type": "book",
+        "author": "Sutton, R.S. & Barto, A.G.",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/Bellman方程.md": {
+    "references": [
+      {
+        "title": "Dynamic Programming",
+        "type": "book",
+        "author": "Bellman, R.",
+        "year": 1957,
+        "url": "https://doi.org/10.1515/9781400824708"
+      },
+      {
+        "title": "Reinforcement Learning: An Introduction",
+        "type": "book",
+        "author": "Sutton, R.S. & Barto, A.G.",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/Q-Learning.md": {
+    "references": [
+      {
+        "title": "Q-Learning",
+        "type": "paper",
+        "author": "Watkins, C.J.C.H. & Dayan, P.",
+        "year": 1992,
+        "url": "https://doi.org/10.1007/BF00992698"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/DQN.md": {
+    "references": [
+      {
+        "title": "Human-level control through deep reinforcement learning",
+        "type": "paper",
+        "author": "Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A.A., Veness, J., Bellemare, M.G., ... & Hassabis, D.",
+        "year": 2015,
+        "url": "https://doi.org/10.1038/nature14236"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/PPO.md": {
+    "references": [
+      {
+        "title": "Proximal Policy Optimization Algorithms",
+        "type": "paper",
+        "author": "Schulman, J., Wolski, F., Dhariwal, P., Radford, A. & Klimov, O.",
+        "year": 2017,
+        "url": "https://doi.org/10.48550/arXiv.1707.06347"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/MAPPO.md": {
+    "references": [
+      {
+        "title": "The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games",
+        "type": "paper",
+        "author": "Yu, C., Velu, A., Vinitsky, E., Gao, J., Wang, Y., Bayen, A. & Wu, Y.",
+        "year": 2022,
+        "url": "https://doi.org/10.48550/arXiv.2103.01955"
+      }
+    ]
+  },
+  "Layer-2C-强化学习/SAC.md": {
+    "references": [
+      {
+        "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+        "type": "paper",
+        "author": "Haarnoja, T., Zhou, A., Abbeel, P. & Levine, S.",
+        "year": 2018,
+        "url": "https://doi.org/10.48550/arXiv.1801.01290"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/PID控制.md": {
+    "references": [
+      {
+        "title": "PID Controllers: Theory, Design, and Tuning, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Hägglund, T.",
+        "year": 1995,
+        "url": "https://www.control.isy.liu.se/research/books/pid.html"
+      },
+      {
+        "title": "Feedback Systems: An Introduction for Scientists and Engineers, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Murray, R.M.",
+        "year": 2021,
+        "url": "https://press.princeton.edu/books/hardcover/9780691175692/feedback-systems"
+      },
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/MPC.md": {
+    "references": [
+      {
+        "title": "Model Predictive Control: Theory and Design, 2nd Edition",
+        "type": "book",
+        "author": "Rawlings, J.B., Mayne, D.Q. & Diehl, M.M.",
+        "year": 2017,
+        "url": "https://nobhillpublishing.com/mpc/"
+      },
+      {
+        "title": "A survey of industrial model predictive control technology",
+        "type": "paper",
+        "author": "Qin, S.J. & Badgwell, T.A.",
+        "year": 2003,
+        "url": "https://doi.org/10.1016/S0959-1524(02)00060-7"
+      },
+      {
+        "title": "Model predictive control: Theory and practice — A survey",
+        "type": "paper",
+        "author": "Garcia, C.E., Prett, D.M. & Morari, M.",
+        "year": 1989,
+        "url": "https://doi.org/10.1016/0005-1098(89)90002-2"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/DMC.md": {
+    "references": [
+      {
+        "title": "Dynamic Matrix Control — A computer control algorithm",
+        "type": "paper",
+        "author": "Cutler, C.R. & Ramaker, B.L.",
+        "year": 1979,
+        "url": "https://doi.org/10.1016/S1474-6670(17)70383-3"
+      },
+      {
+        "title": "A survey of industrial model predictive control technology",
+        "type": "paper",
+        "author": "Qin, S.J. & Badgwell, T.A.",
+        "year": 2003,
+        "url": "https://doi.org/10.1016/S0959-1524(02)00060-7"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/传递函数.md": {
+    "references": [
+      {
+        "title": "Feedback Systems: An Introduction for Scientists and Engineers, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Murray, R.M.",
+        "year": 2021,
+        "url": "https://press.princeton.edu/books/hardcover/9780691175692/feedback-systems"
+      },
+      {
+        "title": "Modern Control Engineering, 5th Edition",
+        "type": "book",
+        "author": "Ogata, K.",
+        "year": 2010,
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/modern-control-engineering/P200000003333"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/串级控制.md": {
+    "references": [
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      },
+      {
+        "title": "Feedback Systems: An Introduction for Scientists and Engineers, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Murray, R.M.",
+        "year": 2021,
+        "url": "https://press.princeton.edu/books/hardcover/9780691175692/feedback-systems"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/前馈控制.md": {
+    "references": [
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      },
+      {
+        "title": "Feedback Systems: An Introduction for Scientists and Engineers, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Murray, R.M.",
+        "year": 2021,
+        "url": "https://press.princeton.edu/books/hardcover/9780691175692/feedback-systems"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/分程控制.md": {
+    "references": [
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      },
+      {
+        "title": "Principles and Practice of Automatic Process Control, 3rd Edition",
+        "type": "book",
+        "author": "Smith, C.A. & Corripio, A.B.",
+        "year": 2005,
+        "url": "https://www.wiley.com/en-us/Principles+and+Practice+of+Automatic+Process+Control%2C+3rd+Edition-p-9780471676249"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/比值控制.md": {
+    "references": [
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      },
+      {
+        "title": "Principles and Practice of Automatic Process Control, 3rd Edition",
+        "type": "book",
+        "author": "Smith, C.A. & Corripio, A.B.",
+        "year": 2005,
+        "url": "https://www.wiley.com/en-us/Principles+and+Practice+of+Automatic+Process+Control%2C+3rd+Edition-p-9780471676249"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/Smith预估器.md": {
+    "references": [
+      {
+        "title": "Closed-loop control of processes with dead time",
+        "type": "paper",
+        "author": "Smith, O.J.M.",
+        "year": 1957,
+        "url": "https://doi.org/10.1080/01969725708900090"
+      },
+      {
+        "title": "Feedback Systems: An Introduction for Scientists and Engineers, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Murray, R.M.",
+        "year": 2021,
+        "url": "https://press.princeton.edu/books/hardcover/9780691175692/feedback-systems"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/内模控制IMC.md": {
+    "references": [
+      {
+        "title": "Internal model control. 1. A unifying review and some new results",
+        "type": "paper",
+        "author": "Garcia, C.E. & Morari, M.",
+        "year": 1982,
+        "url": "https://doi.org/10.1021/i200012a016"
+      },
+      {
+        "title": "Robust Process Control",
+        "type": "book",
+        "author": "Morari, M. & Zafiriou, E.",
+        "year": 1989,
+        "url": "https://www.researchgate.net/publication/230736626_Robust_Process_Control"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/自适应控制.md": {
+    "references": [
+      {
+        "title": "Adaptive Control, 2nd Edition",
+        "type": "book",
+        "author": "Åström, K.J. & Wittenmark, B.",
+        "year": 1995,
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/adaptive-control-2nd-edition/P200000000296"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/鲁棒MPC.md": {
+    "references": [
+      {
+        "title": "Robust model predictive control using tubes",
+        "type": "paper",
+        "author": "Mayne, D.Q., Seron, M.M. & Rakovic, S.V.",
+        "year": 2005,
+        "url": "https://doi.org/10.1016/j.automatica.2004.11.006"
+      },
+      {
+        "title": "Model predictive control: Recent developments and future promise",
+        "type": "paper",
+        "author": "Mayne, D.Q.",
+        "year": 2014,
+        "url": "https://doi.org/10.1016/j.automatica.2014.05.014"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/经济MPC.md": {
+    "references": [
+      {
+        "title": "Economic model predictive control: A tutorial",
+        "type": "paper",
+        "author": "Ellis, M., Durand, H. & Christofides, P.D.",
+        "year": 2014,
+        "url": "https://doi.org/10.1016/j.jprocont.2014.04.003"
+      },
+      {
+        "title": "Unifying economic and dynamic MPC",
+        "type": "paper",
+        "author": "Rawlings, J.B., Angeli, D. & Bates, C.N.",
+        "year": 2012,
+        "url": "https://doi.org/10.1016/j.automatica.2011.08.045"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/系统辨识.md": {
+    "references": [
+      {
+        "title": "System Identification: Theory for the User, 2nd Edition",
+        "type": "book",
+        "author": "Ljung, L.",
+        "year": 1999,
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/system-identification-theory-for-the-user-2nd-edition/P200000003300"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/机理建模.md": {
+    "references": [
+      {
+        "title": "Process Modelling and Model Analysis",
+        "type": "book",
+        "author": "Hangos, K.M. & Cameron, I.T.",
+        "year": 2001,
+        "url": "https://www.elsevier.com/books/process-modelling-and-model-analysis/hangos/978-0-12-576553-1"
+      },
+      {
+        "title": "Process Dynamics and Control, 4th Edition",
+        "type": "book",
+        "author": "Seborg, D.E., Edgar, T.F., Mellichamp, D.A. & Doyle III, F.J.",
+        "year": 2016,
+        "url": "https://www.wiley.com/en-us/Process+Dynamics+and+Control%2C+4th+Edition-p-9781119285915"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/混合建模.md": {
+    "references": [
+      {
+        "title": "Hybrid modeling for bioprocesses: Combining mechanistic and data-driven models",
+        "type": "paper",
+        "author": "von Stosch, M., Oliveira, R., Peres, J. & Feyo de Azevedo, S.",
+        "year": 2014,
+        "url": "https://doi.org/10.1002/bbb.1508"
+      },
+      {
+        "title": "Process Modelling and Model Analysis",
+        "type": "book",
+        "author": "Hangos, K.M. & Cameron, I.T.",
+        "year": 2001,
+        "url": "https://www.elsevier.com/books/process-modelling-and-model-analysis/hangos/978-0-12-576553-1"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/软测量.md": {
+    "references": [
+      {
+        "title": "Data-driven soft sensors in the process industry",
+        "type": "paper",
+        "author": "Kadlec, P., Gabrys, B. & Strandt, S.",
+        "year": 2009,
+        "url": "https://doi.org/10.1016/j.chemolab.2008.09.004"
+      },
+      {
+        "title": "Survey on data-driven industrial process monitoring and diagnosis",
+        "type": "paper",
+        "author": "Qin, S.J.",
+        "year": 2012,
+        "url": "https://doi.org/10.1016/j.arcontrol.2012.09.004"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/动态优化.md": {
+    "references": [
+      {
+        "title": "Nonlinear Programming: Concepts, Algorithms, and Applications to Chemical Processes",
+        "type": "book",
+        "author": "Biegler, L.T.",
+        "year": 2010,
+        "url": "https://www.siam.org/books/mp10/"
+      },
+      {
+        "title": "Optimization of Chemical Processes, 2nd Edition",
+        "type": "book",
+        "author": "Edgar, T.F., Himmelblau, D.M. & Lasdon, L.S.",
+        "year": 2001,
+        "url": "https://www.mheducation.com/highered/product/optimization-chemical-processes-edgar-himmelblau/9780071189773.html"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/实时优化RTO.md": {
+    "references": [
+      {
+        "title": "Optimization of Chemical Processes, 2nd Edition",
+        "type": "book",
+        "author": "Edgar, T.F., Himmelblau, D.M. & Lasdon, L.S.",
+        "year": 2001,
+        "url": "https://www.mheducation.com/highered/product/optimization-chemical-processes-edgar-himmelblau/9780071189773.html"
+      },
+      {
+        "title": "Nonlinear Programming: Concepts, Algorithms, and Applications to Chemical Processes",
+        "type": "book",
+        "author": "Biegler, L.T.",
+        "year": 2010,
+        "url": "https://www.siam.org/books/mp10/"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/数据驱动RTO.md": {
+    "references": [
+      {
+        "title": "Survey on data-driven industrial process monitoring and diagnosis",
+        "type": "paper",
+        "author": "Qin, S.J.",
+        "year": 2012,
+        "url": "https://doi.org/10.1016/j.arcontrol.2012.09.004"
+      },
+      {
+        "title": "Data-driven soft sensors in the process industry",
+        "type": "paper",
+        "author": "Kadlec, P., Gabrys, B. & Strandt, S.",
+        "year": 2009,
+        "url": "https://doi.org/10.1016/j.chemolab.2008.09.004"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/数据驱动FDD.md": {
+    "references": [
+      {
+        "title": "Survey on data-driven industrial process monitoring and diagnosis",
+        "type": "paper",
+        "author": "Qin, S.J.",
+        "year": 2012,
+        "url": "https://doi.org/10.1016/j.arcontrol.2012.09.004"
+      },
+      {
+        "title": "Fault Detection and Diagnosis in Industrial Systems",
+        "type": "book",
+        "author": "Chiang, L.H., Russell, E.L. & Braatz, R.D.",
+        "year": 2001,
+        "url": "https://link.springer.com/book/10.1007/978-1-4471-0347-9"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/PCA故障检测.md": {
+    "references": [
+      {
+        "title": "Survey on data-driven industrial process monitoring and diagnosis",
+        "type": "paper",
+        "author": "Qin, S.J.",
+        "year": 2012,
+        "url": "https://doi.org/10.1016/j.arcontrol.2012.09.004"
+      },
+      {
+        "title": "Fault Detection and Diagnosis in Industrial Systems",
+        "type": "book",
+        "author": "Chiang, L.H., Russell, E.L. & Braatz, R.D.",
+        "year": 2001,
+        "url": "https://link.springer.com/book/10.1007/978-1-4471-0347-9"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/报警管理.md": {
+    "references": [
+      {
+        "title": "ISA-18.2-2016: Management of Alarm Systems for the Process Industries",
+        "type": "standard",
+        "author": "International Society of Automation (ISA)",
+        "year": 2016,
+        "url": "https://www.isa.org/products/isa-18-2-2016-management-of-alarm-systems-for-the-p"
+      },
+      {
+        "title": "EEMUA 191: Alarm Systems — A Guide to Design, Management and Procurement, 3rd Edition",
+        "type": "standard",
+        "author": "Engineering Equipment and Materials Users Association (EEMUA)",
+        "year": 2013,
+        "url": "https://www.eemua.org/publications/details/191"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/HAZOP分析.md": {
+    "references": [
+      {
+        "title": "IEC 61882:2016 — Hazard and operability studies (HAZOP studies) — Application guide",
+        "type": "standard",
+        "author": "International Electrotechnical Commission (IEC)",
+        "year": 2016,
+        "url": "https://webstore.iec.ch/publication/24321"
+      },
+      {
+        "title": "Hazop and Hazan: Identifying and Assessing Process Industry Hazards, 4th Edition",
+        "type": "book",
+        "author": "Kletz, T.A.",
+        "year": 1999,
+        "url": "https://www.icheme.org/books"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/SIL.md": {
+    "references": [
+      {
+        "title": "IEC 61508:2010 — Functional safety of electrical/electronic/programmable electronic safety-related systems",
+        "type": "standard",
+        "author": "International Electrotechnical Commission (IEC)",
+        "year": 2010,
+        "url": "https://webstore.iec.ch/publication/5515"
+      },
+      {
+        "title": "IEC 61511:2016 — Functional safety — Safety instrumented systems for the process industry sector",
+        "type": "standard",
+        "author": "International Electrotechnical Commission (IEC)",
+        "year": 2016,
+        "url": "https://webstore.iec.ch/publication/24323"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/PRBS测试.md": {
+    "references": [
+      {
+        "title": "System Identification: Theory for the User, 2nd Edition",
+        "type": "book",
+        "author": "Ljung, L.",
+        "year": 1999,
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/system-identification-theory-for-the-user-2nd-edition/P200000003300"
+      },
+      {
+        "title": "Perturbation Signals for System Identification",
+        "type": "book",
+        "author": "Godfrey, K.R.",
+        "year": 1993,
+        "url": "https://www.pearson.com/en-us/subject-catalog/p/perturbation-signals-for-system-identification/P200000000023"
+      }
+    ]
+  },
+  "Layer-3-化工与过程控制/调度优化.md": {
+    "references": [
+      {
+        "title": "Optimization of Chemical Processes, 2nd Edition",
+        "type": "book",
+        "author": "Edgar, T.F., Himmelblau, D.M. & Lasdon, L.S.",
+        "year": 2001,
+        "url": "https://www.mheducation.com/highered/product/optimization-chemical-processes-edgar-himmelblau/9780071189773.html"
+      },
+      {
+        "title": "Nonlinear Programming: Concepts, Algorithms, and Applications to Chemical Processes",
+        "type": "book",
+        "author": "Biegler, L.T.",
+        "year": 2010,
+        "url": "https://www.siam.org/books/mp10/"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/LangChain.md": {
+    "references": [
+      {
+        "title": "LangChain Documentation",
+        "type": "website",
+        "author": "LangChain Inc.",
+        "year": 2023,
+        "url": "https://python.langchain.com/docs"
+      },
+      {
+        "title": "LangChain Concept Guide",
+        "type": "website",
+        "author": "LangChain Inc.",
+        "year": 2023,
+        "url": "https://docs.langchain.com/docs/"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/LangGraph.md": {
+    "references": [
+      {
+        "title": "LangGraph Documentation",
+        "type": "website",
+        "author": "LangChain Inc.",
+        "year": 2024,
+        "url": "https://langchain-ai.github.io/langgraph/"
+      },
+      {
+        "title": "LangGraph: Multi-Agent Workflows with LangGraph",
+        "type": "website",
+        "author": "LangChain Inc.",
+        "year": 2024,
+        "url": "https://blog.langchain.dev/langgraph-multi-agent-workflows/"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/CrewAI.md": {
+    "references": [
+      {
+        "title": "CrewAI Documentation",
+        "type": "website",
+        "author": "CrewAI Inc.",
+        "year": 2024,
+        "url": "https://docs.crewai.com/"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/MCP协议.md": {
+    "references": [
+      {
+        "title": "Model Context Protocol Specification",
+        "type": "standard",
+        "author": "Anthropic",
+        "year": 2024,
+        "url": "https://spec.modelcontextprotocol.io"
+      },
+      {
+        "title": "Model Context Protocol Documentation",
+        "type": "website",
+        "author": "Anthropic",
+        "year": 2024,
+        "url": "https://modelcontextprotocol.io"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/Function Calling.md": {
+    "references": [
+      {
+        "title": "OpenAI Function Calling Guide",
+        "type": "website",
+        "author": "OpenAI",
+        "year": 2023,
+        "url": "https://platform.openai.com/docs/guides/function-calling"
+      },
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "type": "paper",
+        "author": "Schick, T., Dwivedi-Yu, J., Dessi, R., et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2302.04761"
+      }
+    ]
+  },
+  "Layer-4-Agent生态/SWE-bench.md": {
+    "references": [
+      {
+        "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "type": "paper",
+        "author": "Jimenez, C. E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., & Narasimhan, K.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2310.06770"
+      },
+      {
+        "title": "SWE-bench Official Website",
+        "type": "website",
+        "author": "Princeton NLP",
+        "year": 2024,
+        "url": "https://www.swebench.com/"
+      }
+    ]
+  },
+  "Layer-5-MLOps/MLflow.md": {
+    "references": [
+      {
+        "title": "MLflow Documentation",
+        "type": "website",
+        "author": "Databricks",
+        "year": 2020,
+        "url": "https://mlflow.org/docs/latest/index.html"
+      },
+      {
+        "title": "MLflow: Accelerating the Machine Learning Lifecycle",
+        "type": "paper",
+        "author": "Zaharia, M., Chen, A., Davidson, A., et al.",
+        "year": 2020,
+        "url": "https://www.usenix.org/conference/opml20/presentation/zaharia"
+      }
+    ]
+  },
+  "Layer-5-MLOps/Kubeflow.md": {
+    "references": [
+      {
+        "title": "Kubeflow Documentation",
+        "type": "website",
+        "author": "Kubeflow Community",
+        "year": 2020,
+        "url": "https://www.kubeflow.org/docs/"
+      },
+      {
+        "title": "Kubeflow on Google Cloud",
+        "type": "website",
+        "author": "Google Cloud",
+        "year": 2020,
+        "url": "https://cloud.google.com/kubeflow"
+      }
+    ]
+  },
+  "Layer-5-MLOps/HuggingFace Hub.md": {
+    "references": [
+      {
+        "title": "Hugging Face Hub Documentation",
+        "type": "website",
+        "author": "Hugging Face",
+        "year": 2021,
+        "url": "https://huggingface.co/docs/hub"
+      },
+      {
+        "title": "HuggingFace's Transformers: State-of-the-art Natural Language Processing",
+        "type": "paper",
+        "author": "Wolf, T., Debut, L., Sanh, V., et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/1910.03771"
+      }
+    ]
+  },
+  "Layer-5-MLOps/Optuna.md": {
+    "references": [
+      {
+        "title": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+        "type": "paper",
+        "author": "Akiba, T., Sano, S., Yanase, T., Ohta, T., & Koyama, M.",
+        "year": 2019,
+        "url": "https://arxiv.org/abs/1907.10902"
+      },
+      {
+        "title": "Optuna Official Documentation",
+        "type": "website",
+        "author": "Preferred Networks",
+        "year": 2019,
+        "url": "https://optuna.readthedocs.io/"
+      }
+    ]
+  },
+  "横切A-数据驱动方法论/DAG因果图.md": {
+    "references": [
+      {
+        "title": "Causality: Models, Reasoning, and Inference (2nd Edition)",
+        "type": "book",
+        "author": "Pearl, J.",
+        "year": 2009,
+        "url": "https://doi.org/10.1017/CBO9780511803161"
+      },
+      {
+        "title": "The Book of Why: The New Science of Cause and Effect",
+        "type": "book",
+        "author": "Pearl, J. & Mackenzie, D.",
+        "year": 2018,
+        "url": "https://www.basicbooks.com/titles/judea-pearl/the-book-of-why/9780465097609/"
+      }
+    ]
+  },
+  "横切A-数据驱动方法论/Kalman滤波.md": {
+    "references": [
+      {
+        "title": "A New Approach to Linear Filtering and Prediction Problems",
+        "type": "paper",
+        "author": "Kalman, R. E.",
+        "year": 1960,
+        "url": "https://doi.org/10.1115/1.3662552"
+      },
+      {
+        "title": "Stochastic Models, Estimation, and Control, Volume 1",
+        "type": "book",
+        "author": "Maybeck, P. S.",
+        "year": 1979,
+        "url": "https://doi.org/10.1016/S0076-5392(09)60067-0"
+      }
+    ]
+  },
+  "横切B-AI系统属性/SHAP.md": {
+    "references": [
+      {
+        "title": "A Unified Approach to Interpreting Model Predictions",
+        "type": "paper",
+        "author": "Lundberg, S. M. & Lee, S.-I.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1705.07874"
+      },
+      {
+        "title": "Interpretable Machine Learning",
+        "type": "book",
+        "author": "Molnar, C.",
+        "year": 2022,
+        "url": "https://christophm.github.io/interpretable-ml-book/"
+      },
+      {
+        "title": "SHAP Documentation",
+        "type": "website",
+        "author": "Lundberg, S. M.",
+        "year": 2018,
+        "url": "https://shap.readthedocs.io/"
+      }
+    ]
+  }
+}

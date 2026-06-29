@@ -1,0 +1,2211 @@
+{
+  "nodes": [
+    {
+      "id": "Layer-0-数学基础/Fisher信息",
+      "title": "Fisher信息",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/fisher信息.html"
+    },
+    {
+      "id": "Layer-0-数学基础/KKT条件",
+      "title": "KKT条件",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/kkt条件.html"
+    },
+    {
+      "id": "Layer-0-数学基础/KV Cache",
+      "title": "KV Cache",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/kv-cache.html"
+    },
+    {
+      "id": "Layer-0-数学基础/MCMC",
+      "title": "马尔可夫链蒙特卡洛",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/mcmc.html"
+    },
+    {
+      "id": "Layer-0-数学基础/SVD",
+      "title": "奇异值分解",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/svd.html"
+    },
+    {
+      "id": "Layer-0-数学基础/互信息",
+      "title": "互信息",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/互信息.html"
+    },
+    {
+      "id": "Layer-0-数学基础/交叉熵",
+      "title": "交叉熵",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/交叉熵.html"
+    },
+    {
+      "id": "Layer-0-数学基础/假设检验",
+      "title": "假设检验",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/假设检验.html"
+    },
+    {
+      "id": "Layer-0-数学基础/凸优化",
+      "title": "凸优化",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/凸优化.html"
+    },
+    {
+      "id": "Layer-0-数学基础/张量基础",
+      "title": "张量基础",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/张量基础.html"
+    },
+    {
+      "id": "Layer-0-数学基础/梯度下降",
+      "title": "梯度下降",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/梯度下降.html"
+    },
+    {
+      "id": "Layer-0-数学基础/梯度下降家族",
+      "title": "梯度下降家族",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-0-数学基础/梯度下降家族.html"
+    },
+    {
+      "id": "Layer-0-数学基础/熵与KL散度",
+      "title": "熵与KL散度",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/熵与kl散度.html"
+    },
+    {
+      "id": "Layer-0-数学基础/特征值与奇异值",
+      "title": "特征值与奇异值",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/特征值与奇异值.html"
+    },
+    {
+      "id": "Layer-0-数学基础/矩阵分解-SVD",
+      "title": "矩阵分解(SVD)",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/矩阵分解-svd.html"
+    },
+    {
+      "id": "Layer-0-数学基础/贝叶斯推断",
+      "title": "贝叶斯推断",
+      "layer": "Layer-0-数学基础",
+      "layerDisplay": "数学基础",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-0-数学基础/贝叶斯推断.html"
+    },
+    {
+      "id": "Layer-1-数据工程/ETL",
+      "title": "ETL管道",
+      "layer": "Layer-1-数据工程",
+      "layerDisplay": "数据工程",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-1-数据工程/etl.html"
+    },
+    {
+      "id": "Layer-1-数据工程/PCA",
+      "title": "主成分分析",
+      "layer": "Layer-1-数据工程",
+      "layerDisplay": "数据工程",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-1-数据工程/pca.html"
+    },
+    {
+      "id": "Layer-1-数据工程/主动学习",
+      "title": "主动学习",
+      "layer": "Layer-1-数据工程",
+      "layerDisplay": "数据工程",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-1-数据工程/主动学习.html"
+    },
+    {
+      "id": "Layer-1-数据工程/联邦学习",
+      "title": "联邦学习",
+      "layer": "Layer-1-数据工程",
+      "layerDisplay": "数据工程",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-1-数据工程/联邦学习.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/Boosting",
+      "title": "Boosting集成",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/boosting.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/CNN",
+      "title": "卷积神经网络",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/cnn.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/KMeans",
+      "title": "KMeans聚类",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/kmeans.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/LogisticRegression",
+      "title": "逻辑回归",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/logisticregression.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/SVM",
+      "title": "支持向量机",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/svm.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/XGBoost",
+      "title": "XGBoost",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/xgboost.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/t-SNE",
+      "title": "t-SNE降维",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/t-sne.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/决策树",
+      "title": "决策树",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/决策树.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/贝叶斯优化",
+      "title": "贝叶斯优化",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/贝叶斯优化.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/随机森林",
+      "title": "随机森林",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/随机森林.html"
+    },
+    {
+      "id": "Layer-2A-经典ML/高斯过程",
+      "title": "高斯过程",
+      "layer": "Layer-2A-经典ML",
+      "layerDisplay": "经典 ML",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2a-经典ml/高斯过程.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/Adam",
+      "title": "Adam优化器",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/adam.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/BatchNorm",
+      "title": "批归一化",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/batchnorm.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/Dropout",
+      "title": "Dropout正则化",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/dropout.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/GAN",
+      "title": "生成对抗网络",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/gan.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/GELU",
+      "title": "GELU",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/gelu.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/LSTM",
+      "title": "长短期记忆网络",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/lstm.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/MLP",
+      "title": "多层感知机",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/mlp.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/RNN",
+      "title": "循环神经网络",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/rnn.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/ResNet",
+      "title": "残差网络",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/resnet.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/残差连接",
+      "title": "残差连接",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/残差连接.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-1/激活函数",
+      "title": "激活函数",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-1/激活函数.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/BERT",
+      "title": "BERT",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/bert.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/CoT",
+      "title": "CoT",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/cot.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/DPO",
+      "title": "DPO",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/dpo.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/GPT",
+      "title": "GPT",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/gpt.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/MoE",
+      "title": "MoE",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/moe.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/RAG",
+      "title": "RAG",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/rag.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/RLHF",
+      "title": "RLHF",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/rlhf.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/Self-Attention",
+      "title": "Self-Attention",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/self-attention.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/Transformer",
+      "title": "Transformer",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/transformer.html"
+    },
+    {
+      "id": "Layer-2B-深度学习/2B-2/位置编码",
+      "title": "位置编码",
+      "layer": "Layer-2B-深度学习",
+      "layerDisplay": "深度学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2b-深度学习/2b-2/位置编码.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/Bellman方程",
+      "title": "Bellman方程",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/bellman方程.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/DQN",
+      "title": "DQN",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/dqn.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/MAPPO",
+      "title": "MAPPO",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/mappo.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/MDP",
+      "title": "MDP",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/mdp.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/PPO",
+      "title": "PPO",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/ppo.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/Q-Learning",
+      "title": "Q-Learning",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/q-learning.html"
+    },
+    {
+      "id": "Layer-2C-强化学习/SAC",
+      "title": "SAC",
+      "layer": "Layer-2C-强化学习",
+      "layerDisplay": "强化学习",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-2c-强化学习/sac.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/DMC",
+      "title": "DMC",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/dmc.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/HAZOP分析",
+      "title": "HAZOP分析",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/hazop分析.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/MPC",
+      "title": "MPC",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/mpc.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/PCA故障检测",
+      "title": "PCA故障检测",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/pca故障检测.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/PID控制",
+      "title": "PID控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/pid控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/PRBS测试",
+      "title": "PRBS测试",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/prbs测试.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/SIL",
+      "title": "SIL",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/sil.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/Smith预估器",
+      "title": "Smith预估器",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/smith预估器.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/串级控制",
+      "title": "串级控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/串级控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/传递函数",
+      "title": "传递函数",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/传递函数.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/内模控制IMC",
+      "title": "内模控制IMC",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/内模控制imc.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/分程控制",
+      "title": "分程控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/分程控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/前馈控制",
+      "title": "前馈控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/前馈控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/动态优化",
+      "title": "动态优化",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/动态优化.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/实时优化RTO",
+      "title": "实时优化RTO",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/实时优化rto.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/报警管理",
+      "title": "报警管理",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/报警管理.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/数据驱动FDD",
+      "title": "数据驱动FDD",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/数据驱动fdd.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/数据驱动RTO",
+      "title": "数据驱动RTO",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/数据驱动rto.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/机理建模",
+      "title": "机理建模",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/机理建模.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/比值控制",
+      "title": "比值控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/比值控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/混合建模",
+      "title": "混合建模",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/混合建模.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/系统辨识",
+      "title": "系统辨识",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/系统辨识.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/经济MPC",
+      "title": "经济MPC",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/经济mpc.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/自适应控制",
+      "title": "自适应控制",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/自适应控制.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/调度优化",
+      "title": "调度优化",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/调度优化.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/软测量",
+      "title": "软测量",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/软测量.html"
+    },
+    {
+      "id": "Layer-3-化工与过程控制/鲁棒MPC",
+      "title": "鲁棒MPC",
+      "layer": "Layer-3-化工与过程控制",
+      "layerDisplay": "化工与过程控制",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-3-化工与过程控制/鲁棒mpc.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/CrewAI",
+      "title": "CrewAI",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-4-agent生态/crewai.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/Function Calling",
+      "title": "Function Calling",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-4-agent生态/function-calling.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/LangChain",
+      "title": "LangChain",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-4-agent生态/langchain.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/LangGraph",
+      "title": "LangGraph",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-4-agent生态/langgraph.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/MCP协议",
+      "title": "MCP协议",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-4-agent生态/mcp协议.html"
+    },
+    {
+      "id": "Layer-4-Agent生态/SWE-bench",
+      "title": "SWE-bench",
+      "layer": "Layer-4-Agent生态",
+      "layerDisplay": "Agent 生态",
+      "type": "benchmark",
+      "tier": 2,
+      "url": "./layer-4-agent生态/swe-bench.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Airflow",
+      "title": "Airflow",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/airflow.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Docker",
+      "title": "Docker",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 1,
+      "url": "./layer-5-mlops/docker.html"
+    },
+    {
+      "id": "Layer-5-MLOps/HuggingFace Hub",
+      "title": "HuggingFace Hub",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/huggingface-hub.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Kubeflow",
+      "title": "Kubeflow",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-5-mlops/kubeflow.html"
+    },
+    {
+      "id": "Layer-5-MLOps/MLflow",
+      "title": "MLflow",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "framework",
+      "tier": 2,
+      "url": "./layer-5-mlops/mlflow.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Optuna",
+      "title": "Optuna",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/optuna.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Triton Inference Server",
+      "title": "Triton Inference Server",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/triton-inference-server.html"
+    },
+    {
+      "id": "Layer-5-MLOps/Weights & Biases",
+      "title": "\"Weights & Biases\"",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/weights--and--biases.html"
+    },
+    {
+      "id": "Layer-5-MLOps/vLLM",
+      "title": "vLLM",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "tool",
+      "tier": 2,
+      "url": "./layer-5-mlops/vllm.html"
+    },
+    {
+      "id": "Layer-5-MLOps/数据漂移检测",
+      "title": "数据漂移检测",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./layer-5-mlops/数据漂移检测.html"
+    },
+    {
+      "id": "Layer-5-MLOps/模型卡",
+      "title": "模型卡",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-5-mlops/模型卡.html"
+    },
+    {
+      "id": "Layer-5-MLOps/模型退化监控",
+      "title": "模型退化监控",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-5-mlops/模型退化监控.html"
+    },
+    {
+      "id": "Layer-5-MLOps/模型验证门禁",
+      "title": "模型验证门禁",
+      "layer": "Layer-5-MLOps",
+      "layerDisplay": "MLOps",
+      "type": "concept",
+      "tier": 2,
+      "url": "./layer-5-mlops/模型验证门禁.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/ARIMA",
+      "title": "ARIMA",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/arima.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/DAG因果图",
+      "title": "DAG因果图",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "concept",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/dag因果图.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/Kalman滤波",
+      "title": "Kalman滤波",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/kalman滤波.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/Monte Carlo Dropout",
+      "title": "Monte Carlo Dropout",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/monte-carlo-dropout.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/共形预测",
+      "title": "共形预测",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/共形预测.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/双重差分(DID)",
+      "title": "双重差分(DID)",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/双重差分(did).html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/多臂赌博机",
+      "title": "多臂赌博机",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/多臂赌博机.html"
+    },
+    {
+      "id": "横切A-数据驱动方法论/高斯过程优化",
+      "title": "高斯过程优化",
+      "layer": "横切A-数据驱动方法论",
+      "layerDisplay": "数据驱动方法论",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切a-数据驱动方法论/高斯过程优化.html"
+    },
+    {
+      "id": "横切B-AI系统属性/LIME",
+      "title": "LIME",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/lime.html"
+    },
+    {
+      "id": "横切B-AI系统属性/Prompt注入",
+      "title": "Prompt注入",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "concept",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/prompt注入.html"
+    },
+    {
+      "id": "横切B-AI系统属性/SHAP",
+      "title": "SHAP",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/shap.html"
+    },
+    {
+      "id": "横切B-AI系统属性/偏见检测",
+      "title": "偏见检测",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "concept",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/偏见检测.html"
+    },
+    {
+      "id": "横切B-AI系统属性/对抗样本",
+      "title": "对抗样本",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "concept",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/对抗样本.html"
+    },
+    {
+      "id": "横切B-AI系统属性/差分隐私",
+      "title": "差分隐私",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/差分隐私.html"
+    },
+    {
+      "id": "横切B-AI系统属性/激活工程",
+      "title": "激活工程",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "concept",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/激活工程.html"
+    },
+    {
+      "id": "横切B-AI系统属性/稀疏自编码器",
+      "title": "稀疏自编码器",
+      "layer": "横切B-AI系统属性",
+      "layerDisplay": "AI 系统属性",
+      "type": "algorithm",
+      "tier": 2,
+      "url": "./横切b-ai系统属性/稀疏自编码器.html"
+    }
+  ],
+  "links": [
+    {
+      "source": "Layer-0-数学基础/KV Cache",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-0-数学基础/MCMC",
+      "target": "Layer-0-数学基础/贝叶斯推断"
+    },
+    {
+      "source": "Layer-0-数学基础/MCMC",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-0-数学基础/MCMC",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-0-数学基础/SVD",
+      "target": "Layer-1-数据工程/PCA"
+    },
+    {
+      "source": "Layer-0-数学基础/交叉熵",
+      "target": "Layer-2B-深度学习/2B-1/ResNet"
+    },
+    {
+      "source": "Layer-0-数学基础/交叉熵",
+      "target": "Layer-2B-深度学习/2B-2/RLHF"
+    },
+    {
+      "source": "Layer-0-数学基础/交叉熵",
+      "target": "Layer-2B-深度学习/2B-2/DPO"
+    },
+    {
+      "source": "Layer-0-数学基础/凸优化",
+      "target": "Layer-2A-经典ML/LogisticRegression"
+    },
+    {
+      "source": "Layer-0-数学基础/凸优化",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-0-数学基础/凸优化",
+      "target": "Layer-2B-深度学习/2B-1/残差连接"
+    },
+    {
+      "source": "Layer-0-数学基础/凸优化",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-0-数学基础/梯度下降",
+      "target": "Layer-2B-深度学习/2B-1/Adam"
+    },
+    {
+      "source": "Layer-0-数学基础/梯度下降",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-0-数学基础/熵与KL散度",
+      "target": "Layer-2B-深度学习/2B-1/GAN"
+    },
+    {
+      "source": "Layer-0-数学基础/熵与KL散度",
+      "target": "Layer-0-数学基础/交叉熵"
+    },
+    {
+      "source": "Layer-0-数学基础/熵与KL散度",
+      "target": "Layer-2B-深度学习/2B-2/RLHF"
+    },
+    {
+      "source": "Layer-0-数学基础/熵与KL散度",
+      "target": "Layer-2B-深度学习/2B-2/DPO"
+    },
+    {
+      "source": "Layer-0-数学基础/贝叶斯推断",
+      "target": "Layer-0-数学基础/MCMC"
+    },
+    {
+      "source": "Layer-0-数学基础/贝叶斯推断",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-0-数学基础/贝叶斯推断",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-0-数学基础/贝叶斯推断",
+      "target": "Layer-1-数据工程/主动学习"
+    },
+    {
+      "source": "Layer-1-数据工程/PCA",
+      "target": "Layer-0-数学基础/SVD"
+    },
+    {
+      "source": "Layer-1-数据工程/PCA",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-1-数据工程/联邦学习",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2A-经典ML/Boosting",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2A-经典ML/Boosting",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-2A-经典ML/Boosting",
+      "target": "Layer-2A-经典ML/随机森林"
+    },
+    {
+      "source": "Layer-2A-经典ML/CNN",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2A-经典ML/CNN",
+      "target": "Layer-2B-深度学习/2B-1/ResNet"
+    },
+    {
+      "source": "Layer-2A-经典ML/CNN",
+      "target": "Layer-2B-深度学习/2B-1/残差连接"
+    },
+    {
+      "source": "Layer-2A-经典ML/CNN",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2A-经典ML/LogisticRegression",
+      "target": "Layer-0-数学基础/交叉熵"
+    },
+    {
+      "source": "Layer-2A-经典ML/LogisticRegression",
+      "target": "Layer-2B-深度学习/2B-1/Adam"
+    },
+    {
+      "source": "Layer-2A-经典ML/LogisticRegression",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2A-经典ML/XGBoost",
+      "target": "Layer-2A-经典ML/Boosting"
+    },
+    {
+      "source": "Layer-2A-经典ML/XGBoost",
+      "target": "Layer-2A-经典ML/决策树"
+    },
+    {
+      "source": "Layer-2A-经典ML/XGBoost",
+      "target": "Layer-2A-经典ML/随机森林"
+    },
+    {
+      "source": "Layer-2A-经典ML/XGBoost",
+      "target": "横切B-AI系统属性/SHAP"
+    },
+    {
+      "source": "Layer-2A-经典ML/t-SNE",
+      "target": "Layer-1-数据工程/PCA"
+    },
+    {
+      "source": "Layer-2A-经典ML/t-SNE",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2A-经典ML/决策树",
+      "target": "Layer-2A-经典ML/随机森林"
+    },
+    {
+      "source": "Layer-2A-经典ML/贝叶斯优化",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-2A-经典ML/贝叶斯优化",
+      "target": "Layer-5-MLOps/Optuna"
+    },
+    {
+      "source": "Layer-2A-经典ML/贝叶斯优化",
+      "target": "Layer-1-数据工程/主动学习"
+    },
+    {
+      "source": "Layer-2A-经典ML/随机森林",
+      "target": "Layer-2A-经典ML/决策树"
+    },
+    {
+      "source": "Layer-2A-经典ML/高斯过程",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-2A-经典ML/高斯过程",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2A-经典ML/高斯过程",
+      "target": "Layer-1-数据工程/主动学习"
+    },
+    {
+      "source": "Layer-2A-经典ML/高斯过程",
+      "target": "Layer-2C-强化学习/MDP"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Adam",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Adam",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Adam",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/BatchNorm",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/BatchNorm",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/BatchNorm",
+      "target": "Layer-2A-经典ML/CNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/BatchNorm",
+      "target": "Layer-2B-深度学习/2B-1/ResNet"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Dropout",
+      "target": "Layer-2A-经典ML/CNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Dropout",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Dropout",
+      "target": "Layer-2B-深度学习/2B-1/RNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/Dropout",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/GAN",
+      "target": "Layer-0-数学基础/SVD"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/GELU",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/GELU",
+      "target": "Layer-2B-深度学习/2B-1/激活函数"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/GELU",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/GELU",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/LSTM",
+      "target": "Layer-2B-深度学习/2B-1/RNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/LSTM",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/LSTM",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/MLP",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/MLP",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/MLP",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/MLP",
+      "target": "Layer-2B-深度学习/2B-1/Adam"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/RNN",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/RNN",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/RNN",
+      "target": "Layer-2B-深度学习/2B-2/Self-Attention"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/ResNet",
+      "target": "Layer-2B-深度学习/2B-1/残差连接"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/ResNet",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/ResNet",
+      "target": "Layer-2B-深度学习/2B-1/BatchNorm"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/ResNet",
+      "target": "Layer-2B-深度学习/2B-1/激活函数"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/残差连接",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/残差连接",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/残差连接",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/残差连接",
+      "target": "Layer-2B-深度学习/2B-1/ResNet"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/激活函数",
+      "target": "Layer-2B-深度学习/2B-1/GELU"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/激活函数",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/激活函数",
+      "target": "Layer-2B-深度学习/2B-1/ResNet"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-1/激活函数",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/BERT",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/BERT",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/BERT",
+      "target": "Layer-2B-深度学习/2B-1/Adam"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/BERT",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/CoT",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/DPO",
+      "target": "Layer-2B-深度学习/2B-2/RLHF"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/DPO",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/GPT",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/GPT",
+      "target": "Layer-2B-深度学习/2B-2/Self-Attention"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/GPT",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/GPT",
+      "target": "Layer-4-Agent生态/Function Calling"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/MoE",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/MoE",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/RAG",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/RAG",
+      "target": "Layer-4-Agent生态/LangGraph"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/RLHF",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/RLHF",
+      "target": "Layer-2B-深度学习/2B-2/DPO"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/RLHF",
+      "target": "Layer-0-数学基础/交叉熵"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Self-Attention",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Self-Attention",
+      "target": "Layer-2B-深度学习/2B-1/RNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Self-Attention",
+      "target": "Layer-2A-经典ML/CNN"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Self-Attention",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Transformer",
+      "target": "Layer-2B-深度学习/2B-2/Self-Attention"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Transformer",
+      "target": "Layer-2B-深度学习/2B-1/激活函数"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Transformer",
+      "target": "Layer-2B-深度学习/2B-1/残差连接"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/Transformer",
+      "target": "Layer-2B-深度学习/2B-1/Dropout"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/位置编码",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/位置编码",
+      "target": "Layer-2B-深度学习/2B-2/Self-Attention"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/位置编码",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-2B-深度学习/2B-2/位置编码",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-2C-强化学习/Bellman方程",
+      "target": "Layer-2C-强化学习/Q-Learning"
+    },
+    {
+      "source": "Layer-2C-强化学习/Bellman方程",
+      "target": "Layer-2C-强化学习/DQN"
+    },
+    {
+      "source": "Layer-2C-强化学习/Bellman方程",
+      "target": "Layer-2B-深度学习/2B-2/RLHF"
+    },
+    {
+      "source": "Layer-2C-强化学习/Bellman方程",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-2C-强化学习/DQN",
+      "target": "Layer-2C-强化学习/Q-Learning"
+    },
+    {
+      "source": "Layer-2C-强化学习/DQN",
+      "target": "Layer-2A-经典ML/CNN"
+    },
+    {
+      "source": "Layer-2C-强化学习/DQN",
+      "target": "Layer-2C-强化学习/SAC"
+    },
+    {
+      "source": "Layer-2C-强化学习/MAPPO",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-2C-强化学习/MDP",
+      "target": "Layer-2C-强化学习/Q-Learning"
+    },
+    {
+      "source": "Layer-2C-强化学习/MDP",
+      "target": "Layer-2C-强化学习/DQN"
+    },
+    {
+      "source": "Layer-2C-强化学习/MDP",
+      "target": "Layer-2B-深度学习/2B-1/RNN"
+    },
+    {
+      "source": "Layer-2C-强化学习/MDP",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-2C-强化学习/PPO",
+      "target": "Layer-2B-深度学习/2B-2/RLHF"
+    },
+    {
+      "source": "Layer-2C-强化学习/PPO",
+      "target": "Layer-2C-强化学习/SAC"
+    },
+    {
+      "source": "Layer-2C-强化学习/Q-Learning",
+      "target": "Layer-2C-强化学习/DQN"
+    },
+    {
+      "source": "Layer-2C-强化学习/SAC",
+      "target": "Layer-2C-强化学习/PPO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/DMC",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/DMC",
+      "target": "Layer-3-化工与过程控制/PRBS测试"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/DMC",
+      "target": "Layer-3-化工与过程控制/机理建模"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/DMC",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/HAZOP分析",
+      "target": "Layer-3-化工与过程控制/SIL"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/MPC",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/MPC",
+      "target": "Layer-3-化工与过程控制/经济MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/MPC",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PCA故障检测",
+      "target": "Layer-1-数据工程/PCA"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PCA故障检测",
+      "target": "Layer-0-数学基础/SVD"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PCA故障检测",
+      "target": "Layer-3-化工与过程控制/数据驱动FDD"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PCA故障检测",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PID控制",
+      "target": "Layer-3-化工与过程控制/内模控制IMC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PID控制",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PID控制",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PID控制",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PRBS测试",
+      "target": "Layer-3-化工与过程控制/系统辨识"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PRBS测试",
+      "target": "Layer-1-数据工程/主动学习"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PRBS测试",
+      "target": "Layer-3-化工与过程控制/DMC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/PRBS测试",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/SIL",
+      "target": "Layer-3-化工与过程控制/HAZOP分析"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/Smith预估器",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/Smith预估器",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/Smith预估器",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/Smith预估器",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/串级控制",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/串级控制",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/串级控制",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/串级控制",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/传递函数",
+      "target": "Layer-3-化工与过程控制/PRBS测试"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/传递函数",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/传递函数",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/传递函数",
+      "target": "Layer-3-化工与过程控制/内模控制IMC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/内模控制IMC",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/内模控制IMC",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/内模控制IMC",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/分程控制",
+      "target": "Layer-3-化工与过程控制/比值控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/分程控制",
+      "target": "Layer-3-化工与过程控制/串级控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/分程控制",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/前馈控制",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/前馈控制",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/前馈控制",
+      "target": "Layer-3-化工与过程控制/系统辨识"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/前馈控制",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/动态优化",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/动态优化",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/实时优化RTO",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/实时优化RTO",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/实时优化RTO",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/实时优化RTO",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/报警管理",
+      "target": "Layer-3-化工与过程控制/HAZOP分析"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/报警管理",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/报警管理",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/报警管理",
+      "target": "横切A-数据驱动方法论/DAG因果图"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动FDD",
+      "target": "Layer-2A-经典ML/SVM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动FDD",
+      "target": "Layer-2A-经典ML/随机森林"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动FDD",
+      "target": "Layer-2B-深度学习/2B-1/GAN"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动FDD",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动RTO",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动RTO",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动RTO",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/数据驱动RTO",
+      "target": "Layer-1-数据工程/主动学习"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/机理建模",
+      "target": "Layer-3-化工与过程控制/混合建模"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/机理建模",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/机理建模",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/比值控制",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/比值控制",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/比值控制",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/比值控制",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/混合建模",
+      "target": "Layer-3-化工与过程控制/机理建模"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/混合建模",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/混合建模",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/混合建模",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/系统辨识",
+      "target": "Layer-3-化工与过程控制/传递函数"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/系统辨识",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/系统辨识",
+      "target": "Layer-2B-深度学习/2B-2/Transformer"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/系统辨识",
+      "target": "Layer-0-数学基础/MCMC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/经济MPC",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/经济MPC",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/经济MPC",
+      "target": "Layer-3-化工与过程控制/动态优化"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/经济MPC",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/自适应控制",
+      "target": "Layer-3-化工与过程控制/PID控制"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/自适应控制",
+      "target": "Layer-3-化工与过程控制/PRBS测试"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/调度优化",
+      "target": "Layer-3-化工与过程控制/实时优化RTO"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/调度优化",
+      "target": "Layer-2C-强化学习/MDP"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/调度优化",
+      "target": "Layer-2C-强化学习/DQN"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/调度优化",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/软测量",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/软测量",
+      "target": "Layer-2B-深度学习/2B-1/LSTM"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/软测量",
+      "target": "Layer-2A-经典ML/随机森林"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/软测量",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/鲁棒MPC",
+      "target": "Layer-3-化工与过程控制/MPC"
+    },
+    {
+      "source": "Layer-3-化工与过程控制/鲁棒MPC",
+      "target": "Layer-2A-经典ML/高斯过程"
+    },
+    {
+      "source": "Layer-4-Agent生态/CrewAI",
+      "target": "Layer-4-Agent生态/LangGraph"
+    },
+    {
+      "source": "Layer-4-Agent生态/CrewAI",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-4-Agent生态/Function Calling",
+      "target": "Layer-2B-深度学习/2B-2/RAG"
+    },
+    {
+      "source": "Layer-4-Agent生态/Function Calling",
+      "target": "Layer-4-Agent生态/MCP协议"
+    },
+    {
+      "source": "Layer-4-Agent生态/Function Calling",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-4-Agent生态/LangChain",
+      "target": "Layer-4-Agent生态/LangGraph"
+    },
+    {
+      "source": "Layer-4-Agent生态/LangChain",
+      "target": "横切A-数据驱动方法论/DAG因果图"
+    },
+    {
+      "source": "Layer-4-Agent生态/LangChain",
+      "target": "Layer-2B-深度学习/2B-2/RAG"
+    },
+    {
+      "source": "Layer-4-Agent生态/LangGraph",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-4-Agent生态/MCP协议",
+      "target": "Layer-4-Agent生态/Function Calling"
+    },
+    {
+      "source": "Layer-4-Agent生态/MCP协议",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-4-Agent生态/SWE-bench",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-5-MLOps/Airflow",
+      "target": "Layer-5-MLOps/MLflow"
+    },
+    {
+      "source": "Layer-5-MLOps/Docker",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/HuggingFace Hub",
+      "target": "Layer-2B-深度学习/2B-2/BERT"
+    },
+    {
+      "source": "Layer-5-MLOps/HuggingFace Hub",
+      "target": "Layer-2B-深度学习/2B-2/GPT"
+    },
+    {
+      "source": "Layer-5-MLOps/Kubeflow",
+      "target": "横切A-数据驱动方法论/DAG因果图"
+    },
+    {
+      "source": "Layer-5-MLOps/Kubeflow",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-5-MLOps/MLflow",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-5-MLOps/MLflow",
+      "target": "Layer-5-MLOps/Optuna"
+    },
+    {
+      "source": "Layer-5-MLOps/MLflow",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/MLflow",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-5-MLOps/Optuna",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-5-MLOps/Optuna",
+      "target": "Layer-5-MLOps/MLflow"
+    },
+    {
+      "source": "Layer-5-MLOps/Optuna",
+      "target": "Layer-2B-深度学习/2B-1/Adam"
+    },
+    {
+      "source": "Layer-5-MLOps/Optuna",
+      "target": "Layer-2A-经典ML/贝叶斯优化"
+    },
+    {
+      "source": "Layer-5-MLOps/Triton Inference Server",
+      "target": "Layer-5-MLOps/vLLM"
+    },
+    {
+      "source": "Layer-5-MLOps/Triton Inference Server",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/Weights & Biases",
+      "target": "Layer-5-MLOps/Optuna"
+    },
+    {
+      "source": "Layer-5-MLOps/vLLM",
+      "target": "Layer-4-Agent生态/LangChain"
+    },
+    {
+      "source": "Layer-5-MLOps/vLLM",
+      "target": "Layer-5-MLOps/Triton Inference Server"
+    },
+    {
+      "source": "Layer-5-MLOps/数据漂移检测",
+      "target": "Layer-2A-经典ML/XGBoost"
+    },
+    {
+      "source": "Layer-5-MLOps/数据漂移检测",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型卡",
+      "target": "横切B-AI系统属性/SHAP"
+    },
+    {
+      "source": "Layer-5-MLOps/模型卡",
+      "target": "Layer-5-MLOps/MLflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型卡",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型退化监控",
+      "target": "Layer-5-MLOps/Airflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型退化监控",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型退化监控",
+      "target": "Layer-5-MLOps/MLflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型验证门禁",
+      "target": "Layer-5-MLOps/MLflow"
+    },
+    {
+      "source": "Layer-5-MLOps/模型验证门禁",
+      "target": "Layer-5-MLOps/Kubeflow"
+    },
+    {
+      "source": "横切A-数据驱动方法论/ARIMA",
+      "target": "Layer-2B-深度学习/2B-1/MLP"
+    },
+    {
+      "source": "横切A-数据驱动方法论/DAG因果图",
+      "target": "Layer-0-数学基础/梯度下降"
+    },
+    {
+      "source": "横切A-数据驱动方法论/Kalman滤波",
+      "target": "Layer-3-化工与过程控制/软测量"
+    },
+    {
+      "source": "横切A-数据驱动方法论/共形预测",
+      "target": "横切A-数据驱动方法论/Monte Carlo Dropout"
+    },
+    {
+      "source": "横切A-数据驱动方法论/双重差分(DID)",
+      "target": "横切A-数据驱动方法论/DAG因果图"
+    },
+    {
+      "source": "横切A-数据驱动方法论/高斯过程优化",
+      "target": "Layer-5-MLOps/Optuna"
+    },
+    {
+      "source": "横切B-AI系统属性/LIME",
+      "target": "横切B-AI系统属性/SHAP"
+    },
+    {
+      "source": "横切B-AI系统属性/SHAP",
+      "target": "Layer-3-化工与过程控制/数据驱动FDD"
+    },
+    {
+      "source": "横切B-AI系统属性/SHAP",
+      "target": "横切A-数据驱动方法论/DAG因果图"
+    },
+    {
+      "source": "横切B-AI系统属性/对抗样本",
+      "target": "横切B-AI系统属性/Prompt注入"
+    },
+    {
+      "source": "横切B-AI系统属性/激活工程",
+      "target": "横切B-AI系统属性/稀疏自编码器"
+    },
+    {
+      "source": "横切B-AI系统属性/稀疏自编码器",
+      "target": "横切B-AI系统属性/激活工程"
+    }
+  ]
+}

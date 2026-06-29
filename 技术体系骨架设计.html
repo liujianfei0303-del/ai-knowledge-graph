@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>技术体系骨架设计 | AI Knowledge Graph</title><meta charset="utf-8"/><link rel="preload" href="./index-47d9ba67.css" as="style"/><link rel="preload" href="./prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="AI 技术体系知识图谱"/><meta property="og:title" content="技术体系骨架设计 | AI Knowledge Graph"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="技术体系骨架设计 | AI Knowledge Graph"/><meta name="twitter:description" content="AI 技术体系知识图谱 — 顶层分类骨架设计 设计稿 v0.2 | 2026-06-22 | 已整合 CC 审阅 P0 修复 |## 体系总览（7 层架构 + AI×化工融合映射） ┌──────────────────────────────────────────────────────────────┐ │ Layer 5: MLOps &amp; 工程 │ ├──────────────────────────────────────────────────────────────┤ │ Layer 4: Agent 生态 │ ├────────────────────────────..."/><meta property="og:description" content="AI 技术体系知识图谱 — 顶层分类骨架设计 设计稿 v0.2 | 2026-06-22 | 已整合 CC 审阅 P0 修复 |## 体系总览（7 层架构 + AI×化工融合映射） ┌──────────────────────────────────────────────────────────────┐ │ Layer 5: MLOps &amp; 工程 │ ├──────────────────────────────────────────────────────────────┤ │ Layer 4: Agent 生态 │ ├────────────────────────────..."/><meta property="og:image:alt" content="AI 技术体系知识图谱 — 顶层分类骨架设计 设计稿 v0.2 | 2026-06-22 | 已整合 CC 审阅 P0 修复 |## 体系总览（7 层架构 + AI×化工融合映射） ┌──────────────────────────────────────────────────────────────┐ │ Layer 5: MLOps &amp; 工程 │ ├──────────────────────────────────────────────────────────────┤ │ Layer 4: Agent 生态 │ ├────────────────────────────..."/><meta property="twitter:domain" content="liujianfei0303-del.github.io/ai-knowledge-graph"/><meta property="og:url" content="https://liujianfei0303-del.github.io/ai-knowledge-graph/技术体系骨架设计"/><meta property="twitter:url" content="https://liujianfei0303-del.github.io/ai-knowledge-graph/技术体系骨架设计"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="AI 技术体系知识图谱 — 顶层分类骨架设计 设计稿 v0.2 | 2026-06-22 | 已整合 CC 审阅 P0 修复 |## 体系总览（7 层架构 + AI×化工融合映射） ┌──────────────────────────────────────────────────────────────┐ │ Layer 5: MLOps &amp; 工程 │ ├──────────────────────────────────────────────────────────────┤ │ Layer 4: Agent 生态 │ ├────────────────────────────..."/><meta name="generator" content="Quartz"/><link href="./index-47d9ba67.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="./static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="./prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://liujianfei0303-del.github.io/ai-knowledge-graph/技术体系骨架设计-og-image.webp"/><meta property="og:image:url" content="https://liujianfei0303-del.github.io/ai-knowledge-graph/技术体系骨架设计-og-image.webp"/><meta name="twitter:image" content="https://liujianfei0303-del.github.io/ai-knowledge-graph/技术体系骨架设计-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="技术体系骨架设计" data-basepath="/ai-knowledge-graph"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">AI 技术体系知识图谱</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="搜索" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索内容..." placeholder="搜索内容..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="暗色模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="阅读模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-119" aria-label="探索"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-119" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>技术体系骨架设计</a></div></nav><h1 class="article-title">技术体系骨架设计</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-22T13:39:56.741Z">2026年6月22日</time><span>16分钟阅读</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="ai-技术体系知识图谱--顶层分类骨架设计">AI 技术体系知识图谱 — 顶层分类骨架设计<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-技术体系知识图谱--顶层分类骨架设计" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>设计稿 v0.2 | 2026-06-22 | 已整合 CC 审阅 P0 修复</p>
+</blockquote>
+<hr/>
+<p>|## 体系总览（7 层架构 + AI×化工融合映射）</p>
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│                    Layer 5: MLOps &amp; 工程                      │
+├──────────────────────────────────────────────────────────────┤
+│                    Layer 4: Agent 生态                        │
+├──────────────────────────────────────────────────────────────┤
+│               Layer 3: 化工与过程控制                         │
+├──────────────────────────────────────────────────────────────┤
+│     ┌──────────────────────────────────────────────────┐     │
+│     │  Layer 2B-2 (原Layer 3): Transformer &amp; Scaling  │     │
+│     └──────────────────────────────────────────────────┘     │
+│     Layer 2A: 经典ML    Layer 2B-1: 深度学习  Layer 2C: RL  │
+├──────────────────────────────────────────────────────────────┤
+│                      Layer 1: 数据工程                        │
+├──────────────────────────────────────────────────────────────┤
+│                   Layer 0: 数学基础                           │
+└──────────────────────────────────────────────────────────────┘
+
+ 横切 A — 数据驱动方法论                    横切 B — AI 系统属性
+ (因果推断 / 时序 / 贝叶斯优化 / DOE)       (可解释性 / 安全 / 隐私 / UQ)
+</code></pre>
+<blockquote>
+<p>Layer 3 是<strong>应用域层</strong>，位置在基础算法层（2A/2B/2C）之上、系统工程层（4/5）之下，体现”理论基础→算法→应用→系统”的递进关系。</p>
+<p>⚠️ <strong>注意</strong>：此架构是<strong>抽象层次</strong>，不是严格的技术栈依赖。所有下层技术均可直接服务于 Layer 3（化工），图中用堆叠示意抽象层级。化工控制节点的 prerequisite 边将明确指向具体 ML/优化/数据技术节点。</p>
+<p>🤝 <strong>AI × 化工融合</strong>：Layer 3 的节点通过 <code>applies</code> 边与下层 AI/ML 节点建立交叉链接。每个化工节点标注使用了哪些 AI 技术，每个 AI 节点标注在化工中的典型应用。详见各 <code>_index.md</code> 中的「融合映射表」。</p>
+</blockquote>
+<hr/>
+<h2 id="节点类型体系">节点类型体系<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#节点类型体系" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每个知识节点必须标注 <code>type</code> 字段：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>类型</th><th>说明</th><th>示例</th></tr></thead><tbody><tr><td><code>concept</code></td><td>核心概念/理论</td><td>注意力机制、Scaling Law</td></tr><tr><td><code>algorithm</code></td><td>算法/方法</td><td>PPO、Adam、Transformer</td></tr><tr><td><code>framework</code></td><td>软件框架</td><td>LangChain、PyTorch、Kubeflow</td></tr><tr><td><code>tool</code></td><td>工具/系统</td><td>vLLM、MLflow、Jupyter</td></tr><tr><td><code>paper</code></td><td>关键论文</td><td>Attention Is All You Need</td></tr><tr><td><code>benchmark</code></td><td>评估基准</td><td>MMLU、HumanEval、SWE-bench</td></tr><tr><td><code>metric</code></td><td>度量指标</td><td>Perplexity、BLEU、F1</td></tr></tbody></table></div>
+<hr/>
+<h2 id="关系类型定义5-种有向关系">关系类型定义（5 种有向关系）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关系类型定义5-种有向关系" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>关系</th><th>语义</th><th style="text-align:center;">方向</th><th style="text-align:center;">示例</th></tr></thead><tbody><tr><td><code>prerequisite</code></td><td>A 需要先掌握 B</td><td style="text-align:center;">→</td><td style="text-align:center;">Transformer → Self-Attention</td></tr><tr><td><code>variant_of</code></td><td>A 是 B 的变体/改进</td><td style="text-align:center;">→</td><td style="text-align:center;">GPT-4o → GPT-4</td></tr><tr><td><code>applies</code></td><td>A 技术被用于 B</td><td style="text-align:center;">→</td><td style="text-align:center;">RL → 能源调度</td></tr><tr><td><code>subtopic</code></td><td>B 是 A 的子领域</td><td style="text-align:center;">→</td><td style="text-align:center;">Agent生态 → 多Agent协作</td></tr><tr><td><code>related</code></td><td>强关联但不属于以上</td><td style="text-align:center;">↔</td><td style="text-align:center;">因果推断 ↔ 时间序列</td></tr></tbody></table></div>
+<p>5 种关系<strong>互斥</strong>，每对节点间仅用最精确的一种。</p>
+<hr/>
+<h2 id="layer-0--数学基础">Layer 0 — 数学基础<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-0--数学基础" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>子领域</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>线性代数</strong></td><td>矩阵理论</td><td>矩阵分解(SVD/PCA/NMF)、特征值/奇异值、张量基础</td></tr><tr><td style="text-align:center;"><strong>概率与统计</strong></td><td>概率论</td><td>分布族、贝叶斯推断、MCMC、假设检验</td></tr><tr><td style="text-align:center;"><strong>最优化</strong></td><td>优化理论</td><td>凸优化、梯度下降家族、约束优化(KKT)、对偶性</td></tr><tr><td style="text-align:center;"><strong>信息论</strong></td><td>信息度量</td><td>熵、KL散度、交叉熵、互信息、Fisher信息</td></tr></tbody></table></div>
+<blockquote>
+<p><strong>prerequisite 连线示例</strong>: SVD → [PCA, 矩阵分解推荐, LoRA]; KL散度 → [VAE, 知识蒸馏, RLHF]; MCMC → [贝叶斯神经网络, 贝叶斯优化]</p>
+</blockquote>
+<hr/>
+<h2 id="layer-1--数据工程">Layer 1 — 数据工程<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-1--数据工程" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>数据采集</strong></td><td>ETL管道、流式处理(Kafka/Flink)、爬虫、日志系统</td></tr><tr><td style="text-align:center;"><strong>特征工程</strong></td><td>编码方法、特征选择(Filter/Wrapper/Embedded)、特征提取(PCA/ICA)、特征缩放</td></tr><tr><td style="text-align:center;"><strong>数据清洗</strong></td><td>缺失值处理、异常值检测、去重、数据标准化</td></tr><tr><td style="text-align:center;"><strong>数据标注</strong></td><td>主动学习、半自动标注、众包、LLM辅助标注</td></tr><tr><td style="text-align:center;"><strong>数据治理</strong></td><td>数据血缘、质量监控、隐私合规(差分隐私/联邦学习)</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-2a--经典机器学习">Layer 2A — 经典机器学习<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2a--经典机器学习" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>监督学习</strong></td><td>线性回归、逻辑回归、SVM、决策树、随机森林、XGBoost/LightGBM/CatBoost、KNN</td></tr><tr><td style="text-align:center;"><strong>无监督学习</strong></td><td>聚类(KMeans/DBSCAN/层次聚类)、降维(PCA/t-SNE/UMAP)、关联规则(Apriori/FP-Growth)、异常检测(IForest/LOF)</td></tr><tr><td style="text-align:center;"><strong>集成方法</strong></td><td>Bagging、Boosting(AdaBoost/Gradient Boosting)、Stacking</td></tr><tr><td style="text-align:center;"><strong>贝叶斯方法</strong></td><td>朴素贝叶斯、高斯过程、贝叶斯优化、GMM</td></tr><tr><td style="text-align:center;"><strong>统计建模</strong></td><td>回归分析、方差分析、混合效应模型、结构方程模型</td></tr><tr><td style="text-align:center;"><strong>实验设计</strong></td><td>因子设计、响应面法、正交实验、序贯分析</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-2b--深度学习含基础模型">Layer 2B — 深度学习（含基础模型）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2b--深度学习含基础模型" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>Layer 2B 拆为两个子层：2B-1 覆盖非 Transformer 深度学习，2B-2（即原 Layer 3）覆盖 Transformer 架构与 Scaling 行为。</p>
+</blockquote>
+<h3 id="2b-1-非-transformer-深度学习">2B-1: 非 Transformer 深度学习<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2b-1-非-transformer-深度学习" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>基础架构</strong></td><td>MLP、激活函数(ReLU/GELU/Swish)、正则化(Dropout/BatchNorm/LayerNorm)、损失函数</td></tr><tr><td style="text-align:center;"><strong>CNN</strong></td><td>卷积/池化、ResNet/DenseNet/ViT、目标检测(YOLO/DETR)、语义分割(U-Net/SAM)</td></tr><tr><td style="text-align:center;"><strong>序列模型</strong></td><td>RNN/LSTM/GRU、Seq2Seq + Attention、TCN</td></tr><tr><td style="text-align:center;"><strong>图神经网络</strong></td><td>GCN、GraphSAGE、GAT、分子/推荐系统应用</td></tr><tr><td style="text-align:center;"><strong>生成模型</strong></td><td>VAE、GAN、Normalizing Flow、扩散模型(DDPM/Stable Diffusion)</td></tr><tr><td style="text-align:center;"><strong>自监督学习</strong></td><td>对比学习(SimCLR/CLIP)、MAE、BYOL、SimSiam</td></tr></tbody></table></div>
+<h3 id="2b-2-transformer-架构与-scaling原-layer-3">2B-2: Transformer 架构与 Scaling（原 Layer 3）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2b-2-transformer-架构与-scaling原-layer-3" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>架构</strong></td><td>Transformer(Self-Attention/位置编码)、GPT系列(decoder-only)、BERT系列(encoder-only)、T5(encoder-decoder)、MoE(Mixtral/DeepSeek)</td></tr><tr><td style="text-align:center;"><strong>Scaling Laws</strong></td><td>Chinchilla、涌现能力、Scaling Hypothesis、性能预测</td></tr><tr><td style="text-align:center;"><strong>训练技术</strong></td><td>预训练目标、RLHF/DPO/GRPO、SFT、分布式训练(FSDP/DeepSpeed)、续预训练</td></tr><tr><td style="text-align:center;"><strong>推理增强</strong></td><td>CoT、ToT、Self-Consistency、ReAct、Tool Use、Function Calling</td></tr><tr><td style="text-align:center;"><strong>推理优化</strong></td><td>KV Cache、Speculative Decoding、Flash Attention、Page Attention(vLLM)、量化推理</td></tr><tr><td style="text-align:center;"><strong>多模态</strong></td><td>CLIP/BLIP、LLaVA、文生图(DALL-E/SD)、文生视频(Sora/SVD)、语音(Whisper/CosyVoice)</td></tr><tr><td style="text-align:center;"><strong>上下文扩展</strong></td><td>RoPE扩展、YaRN、LongLoRA、环注意力</td></tr><tr><td style="text-align:center;"><strong>模型评估</strong></td><td>Benchmark(MMLU/GSM8K/HumanEval)、对齐评估、安全评测</td></tr><tr><td style="text-align:center;"><strong>RAG体系</strong></td><td>Naive RAG → Advanced RAG → Modular RAG、Chunk策略、检索器(稠密/稀疏)、重排序、RAPTOR/HippoRAG</td></tr><tr><td style="text-align:center;"><strong>后训练对齐</strong></td><td>RLHF、DPO、GRPO、Constitutional AI、红队测试</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-2c--强化学习">Layer 2C — 强化学习<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2c--强化学习" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>基础</strong></td><td>MDP、Bellman方程、值迭代/策略迭代、Q-Learning、SARSA</td></tr><tr><td style="text-align:center;"><strong>深度RL</strong></td><td>DQN系列、PPO、SAC、TD3、A2C/A3C</td></tr><tr><td style="text-align:center;"><strong>多智能体RL</strong></td><td>MADDPG、QMIX、MAPPO、价值分解</td></tr><tr><td style="text-align:center;"><strong>离线RL</strong></td><td>CQL、IQL、BCQ</td></tr><tr><td style="text-align:center;"><strong>具身智能</strong></td><td>RT-2、Octo、π0、机器人学+感知+RL融合</td></tr><tr><td style="text-align:center;"><strong>RL应用</strong></td><td>机器人控制、能源调度、游戏(AlphaGo)、推荐系统</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-3--化工与过程控制应用域">Layer 3 — 化工与过程控制（应用域）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-3--化工与过程控制应用域" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p><strong>定位</strong>：化工与过程控制是 AI/ML/优化技术的<strong>应用域</strong>。本层覆盖化工过程控制的核心概念、先进控制方法、建模与优化技术，以及 AI 技术与化工控制的融合路径。</p>
+<p><strong>融合方式</strong>：每个化工节点通过 <code>applies</code> 边指向下层 AI 技术节点（如 MPC → 强化学习、软测量 → 深度学习），同时 AI 节点通过 <code>applies</code> 或 <code>related</code> 边指向化工应用场景。</p>
+</blockquote>
+<h3 id="3a-过程控制基础">3A: 过程控制基础<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3a-过程控制基础" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>经典控制</strong></td><td>PID控制（P/PI/PID调参）、前馈控制、串级控制、比值控制、分程控制、Smith预估器</td></tr><tr><td style="text-align:center;"><strong>过程动态特性</strong></td><td>自衡/非自衡过程、纯滞后、多变量耦合、非线性、时变特性</td></tr></tbody></table></div>
+<h3 id="3b-先进过程控制apc">3B: 先进过程控制（APC）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3b-先进过程控制apc" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>模型预测控制</strong></td><td>DMC、GPC、MPC（线性/非线性）、经济MPC(EMPC)、鲁棒MPC、双层MPC（调度+跟踪）</td></tr><tr><td style="text-align:center;"><strong>鲁棒与自适应</strong></td><td>H∞控制、内模控制(IMC)、自适应控制(MRAC/STR)、增益调度、自整定</td></tr><tr><td style="text-align:center;"><strong>工业 APC 实施</strong></td><td>Aspen DMC3、Honeywell Profit Controller、Siemens APC、上中下三层架构</td></tr></tbody></table></div>
+<h3 id="3c-过程建模与辨识">3C: 过程建模与辨识<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3c-过程建模与辨识" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>机理建模</strong></td><td>一阶/二阶加滞后( FOPDT/SOPDT)、状态空间模型、传递函数、反应/分离/传热模型</td></tr><tr><td style="text-align:center;"><strong>系统辨识</strong></td><td>PRBS测试、阶跃响应法、子空间法(N4SID/MOESP)、预测误差法(PEM)、递推辨识(RLS/FFRLS)</td></tr><tr><td style="text-align:center;"><strong>混合建模</strong></td><td>串行混合(校正)、并行混合(偏差补偿)、嵌入混合(灰箱)、传递混合(参数估计)</td></tr><tr><td style="text-align:center;"><strong>软测量</strong></td><td>回归型(PLS/PCR)、机器学习型(SVR/RF/ANN)、深度学习型(DNN/LSTM/CNN)</td></tr></tbody></table></div>
+<h3 id="3d-过程优化">3D: 过程优化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-过程优化" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>实时优化(RTO)</strong></td><td>稳态RTO、数据驱动RTO、代理模型优化、岭分析/稳态检测</td></tr><tr><td style="text-align:center;"><strong>调度优化</strong></td><td>MILP/MINLP调度、滚动时域调度、随机调度、两阶段随机规划</td></tr><tr><td style="text-align:center;"><strong>计划优化</strong></td><td>LP/NLP全厂计划、Petroleum Refining Scheduler、多周期生产计划</td></tr><tr><td style="text-align:center;"><strong>动态优化</strong></td><td>最优控制、梯度路径法(CVP)、正交配置、动态RTO(DRTO)</td></tr></tbody></table></div>
+<h3 id="3e-故障诊断与安全">3E: 故障诊断与安全<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3e-故障诊断与安全" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>故障检测与诊断</strong></td><td>PCA/PLS故障检测、SPE/T²统计量、贡献图、FDA、CCA-DI、数据驱动FDD（DNN/SVM/RF）、信号分析(FFT/小波)</td></tr><tr><td style="text-align:center;"><strong>安全系统</strong></td><td>SIL定级(HAZOP/LOPA)、SIF安全仪表功能、火气系统(F&amp;G)、安全联锁、ESD</td></tr><tr><td style="text-align:center;"><strong>报警管理</strong></td><td>ISA-18.2/EEMUA-191、报警泛滥、报警合理化、先进报警(动态/预测/诊断)</td></tr></tbody></table></div>
+<h3 id="3f-化工基础跨域知识辅助">3F: 化工基础（跨域知识辅助）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3f-化工基础跨域知识辅助" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>反应工程</strong></td><td>反应器类型(CSTR/PFR/BR)、反应动力学、停留时间分布、催化反应</td></tr><tr><td style="text-align:center;"><strong>分离工程</strong></td><td>精馏/吸收/萃取/结晶、闪蒸、膜分离</td></tr><tr><td style="text-align:center;"><strong>热力学与物性</strong></td><td>状态方程(SRK/PR/GERG)、相平衡(Gibbs自由能/活度系数)、物性估算(UNIFAC/基团贡献)</td></tr><tr><td style="text-align:center;"><strong>传递过程</strong></td><td>流体力学(CFD/N-S/雷诺数)、传热(HTRI/换热器网络/夹点)、传质</td></tr><tr><td style="text-align:center;"><strong>流程模拟</strong></td><td>Aspen Plus/Pro II/MATLAB Simulink/gPROMS、序贯模块法/联立方程法</td></tr></tbody></table></div>
+<h3 id="-ai--化工融合映射">🤝 AI × 化工融合映射<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ai--化工融合映射" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>下表展示各化工子领域与下层 AI/ML/优化技术的交叉关系：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>化工子领域</th><th>应用 AI 技术</th><th>融合方式</th></tr></thead><tbody><tr><td><strong>软测量</strong></td><td>DNN/LSTM(2B-1)、SVR(2A)、CNN时序(2B-1)</td><td>数据驱动替代机理传感器</td></tr><tr><td><strong>MPC经济调度</strong></td><td>RL/PPO/SAC(2C)、MILP(0)、贝叶斯优化(2A)</td><td>RL替代或增强MPC优化层</td></tr><tr><td><strong>故障诊断</strong></td><td>CNN-LSTM(2B-1)、SVM/RF(2A)、Autoencoder(2B-1)、SHAP(横切B)</td><td>数据驱动FDD替代阈值法</td></tr><tr><td><strong>过程建模</strong></td><td>PINN(2B-1)、GP(2A)、混合建模(2B-1/1)</td><td>机理+数据灰箱融合</td></tr><tr><td><strong>RTO/优化</strong></td><td>代理模型(2A)、贝叶斯优化(2A)、RL(2C)</td><td>数据驱动替代机理RTO</td></tr><tr><td><strong>调度优化</strong></td><td>MILP/MINLP(0)、RL(2C)、两阶段SP(横切A)</td><td>随机规划+在线调整</td></tr><tr><td><strong>过程辨识</strong></td><td>系统辨识(3C)、RLS(1)、时序模型(横切A)</td><td>经典辨识+AI增强</td></tr><tr><td><strong>报警管理</strong></td><td>异常检测(IForest/2A)、时序分析(横切A)、DL分类(2B-1)</td><td>智能报警泛滥管理</td></tr><tr><td><strong>操作优化</strong></td><td>Agent推理(4)、CoT/ReAct(2B-2)、RAG(2B-2)</td><td>LLM辅助操作指导</td></tr><tr><td><strong>安全联锁</strong></td><td>贝叶斯推断(0)、因果推断(横切A)</td><td>风险量化+因果根因分析</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-4--agent-生态">Layer 4 — Agent 生态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-4--agent-生态" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>Agent框架</strong></td><td>AutoGPT/BabyAGI、LangGraph/CrewAI、AutoGen、Semantic Kernel、OpenAI Agents SDK、MCP协议</td></tr><tr><td style="text-align:center;"><strong>推理与规划</strong></td><td>ReAct、Plan-and-Execute、ToT、反思与自我修正</td></tr><tr><td style="text-align:center;"><strong>工具使用</strong></td><td>Function Calling、MCP Tool/Resource/Prompt、API集成、代码解释器</td></tr><tr><td style="text-align:center;"><strong>多Agent协作</strong></td><td>辩论式(debate)、编排式(orchestrator-worker)、市场式(agent marketplace)、共享记忆</td></tr><tr><td style="text-align:center;"><strong>记忆系统</strong></td><td>RAG记忆、知识图谱记忆、长期记忆(持久化)、经验回放</td></tr><tr><td style="text-align:center;"><strong>安全与对齐</strong></td><td>越狱防护、Constitutional AI、RLHF、红队测试、输入/输出过滤（与 2B-2 及横切 B 联动）</td></tr><tr><td style="text-align:center;"><strong>Agent评估</strong></td><td>AgentBench、SWE-bench、GAIA、轨迹评估、可观测性</td></tr></tbody></table></div>
+<hr/>
+<h2 id="layer-5--mlops--工程">Layer 5 — MLOps &amp; 工程<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-5--mlops--工程" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">大类</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>实验管理</strong></td><td>MLflow/W&amp;B/Neptune、实验追踪、超参搜索(Hyperopt/Optuna)</td></tr><tr><td style="text-align:center;"><strong>模型管理</strong></td><td>模型注册、版本管理、模型卡、HuggingFace Hub</td></tr><tr><td style="text-align:center;"><strong>工作流编排</strong></td><td>Kubeflow/Airflow、ML Pipeline、特征存储(Feast)</td></tr><tr><td style="text-align:center;"><strong>部署与推理</strong></td><td>模型服务(Triton/vLLM/TGI)、容器化(Docker/K8s)、Serverless推理</td></tr><tr><td style="text-align:center;"><strong>监控与漂移</strong></td><td>数据漂移检测、模型退化监控、可观测性、告警</td></tr><tr><td style="text-align:center;"><strong>CI/CD for ML</strong></td><td>Feature Store、模型验证门禁、A/B测试、渐进式发布、回滚</td></tr></tbody></table></div>
+<blockquote>
+<p>注：Layer 5 支撑<strong>全部上层</strong>（2A/2B/2C/4），非仅限 Layer 3。</p>
+</blockquote>
+<hr/>
+<h2 id="横切-a--数据驱动方法论">横切 A — 数据驱动方法论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#横切-a--数据驱动方法论" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>覆盖多个层级，偏应用统计的方法论集合：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">领域</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>因果推断</strong></td><td>DAG、Do-Calculus、倾向评分匹配、DID、工具变量、因果森林</td></tr><tr><td style="text-align:center;"><strong>时间序列</strong></td><td>ARIMA/GARCH、状态空间模型、Kalman滤波、Prophet、Informer/PatchTST</td></tr><tr><td style="text-align:center;"><strong>不确定性量化</strong></td><td>贝叶斯神经网络、Monte Carlo Dropout、集成不确定性、共形预测</td></tr><tr><td style="text-align:center;"><strong>贝叶斯优化</strong></td><td>替代模型(GP/RF)、采集函数(EI/PI/UCB)、多目标优化</td></tr><tr><td style="text-align:center;"><strong>实验与A/B测试</strong></td><td>A/B测试设计、序贯分析、多臂赌博机、MAB策略</td></tr></tbody></table></div>
+<hr/>
+<h2 id="横切-b--ai-系统属性">横切 B — AI 系统属性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#横切-b--ai-系统属性" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>贯穿各层的系统质量属性，与横切 A 职责不同：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">领域</th><th>关键技术点</th></tr></thead><tbody><tr><td style="text-align:center;"><strong>可解释性</strong></td><td>SHAP/LIME、Integrated Gradients、注意力归因、CAV、激活工程、稀疏自编码器、探针</td></tr><tr><td style="text-align:center;"><strong>AI安全</strong></td><td>对抗样本、后门攻击、模型窃取、Prompt注入、越狱防护</td></tr><tr><td style="text-align:center;"><strong>隐私计算</strong></td><td>联邦学习、差分隐私、安全多方计算、同态加密</td></tr><tr><td style="text-align:center;"><strong>公平性与偏见</strong></td><td>偏见检测、公平性指标、去偏方法</td></tr></tbody></table></div>
+<hr/>
+<h2 id="tier完备度分级">Tier（完备度）分级<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tier完备度分级" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>每个节点标注当前完备程度：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th style="text-align:center;">Tier</th><th>含义</th><th>内容要求</th></tr></thead><tbody><tr><td style="text-align:center;">1</td><td>骨架</td><td>标题 + 一行定义句 + 1-2 个外部链接 + prerequisite 边</td></tr><tr><td style="text-align:center;">2</td><td>完整</td><td>Tier 1 + 核心要点 + 所有依赖边 + 关键资源</td></tr><tr><td style="text-align:center;">3</td><td>深度</td><td>Tier 2 + 示例/对比/代码/论文总结/测评数据</td></tr></tbody></table></div>
+<hr/>
+<h2 id="已确认的策略">已确认的策略<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#已确认的策略" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong>工具方案</strong>：Obsidian + Quartz + GitHub Pages</li>
+<li><strong>仓库</strong>：公开仓库 + <code>robots.txt</code> 禁止爬虫</li>
+<li><strong>Vault</strong>：直接用项目目录作为 Obsidian Vault</li>
+<li><strong>内容顺序</strong>：先骨架（Tier 1 每节点至少 1 句定义 + 连线 + 外部链接）→ 再填充</li>
+<li><strong>维护</strong>：持续更新的活知识库</li>
+<li><strong>数学基础</strong>：只列关键概念不展开公式，但标注 prerequisite 连线</li>
+<li><strong>CI</strong>：GitHub Actions 自动构建 + Link Check + Frontmatter 校验</li>
+</ol></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-108" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#ai-技术体系知识图谱--顶层分类骨架设计" data-for="ai-技术体系知识图谱--顶层分类骨架设计">AI 技术体系知识图谱 — 顶层分类骨架设计</a></li><li class="depth-1"><a href="#节点类型体系" data-for="节点类型体系">节点类型体系</a></li><li class="depth-1"><a href="#关系类型定义5-种有向关系" data-for="关系类型定义5-种有向关系">关系类型定义（5 种有向关系）</a></li><li class="depth-1"><a href="#layer-0--数学基础" data-for="layer-0--数学基础">Layer 0 — 数学基础</a></li><li class="depth-1"><a href="#layer-1--数据工程" data-for="layer-1--数据工程">Layer 1 — 数据工程</a></li><li class="depth-1"><a href="#layer-2a--经典机器学习" data-for="layer-2a--经典机器学习">Layer 2A — 经典机器学习</a></li><li class="depth-1"><a href="#layer-2b--深度学习含基础模型" data-for="layer-2b--深度学习含基础模型">Layer 2B — 深度学习（含基础模型）</a></li><li class="depth-2"><a href="#2b-1-非-transformer-深度学习" data-for="2b-1-非-transformer-深度学习">2B-1: 非 Transformer 深度学习</a></li><li class="depth-2"><a href="#2b-2-transformer-架构与-scaling原-layer-3" data-for="2b-2-transformer-架构与-scaling原-layer-3">2B-2: Transformer 架构与 Scaling（原 Layer 3）</a></li><li class="depth-1"><a href="#layer-2c--强化学习" data-for="layer-2c--强化学习">Layer 2C — 强化学习</a></li><li class="depth-1"><a href="#layer-3--化工与过程控制应用域" data-for="layer-3--化工与过程控制应用域">Layer 3 — 化工与过程控制（应用域）</a></li><li class="depth-2"><a href="#3a-过程控制基础" data-for="3a-过程控制基础">3A: 过程控制基础</a></li><li class="depth-2"><a href="#3b-先进过程控制apc" data-for="3b-先进过程控制apc">3B: 先进过程控制（APC）</a></li><li class="depth-2"><a href="#3c-过程建模与辨识" data-for="3c-过程建模与辨识">3C: 过程建模与辨识</a></li><li class="depth-2"><a href="#3d-过程优化" data-for="3d-过程优化">3D: 过程优化</a></li><li class="depth-2"><a href="#3e-故障诊断与安全" data-for="3e-故障诊断与安全">3E: 故障诊断与安全</a></li><li class="depth-2"><a href="#3f-化工基础跨域知识辅助" data-for="3f-化工基础跨域知识辅助">3F: 化工基础（跨域知识辅助）</a></li><li class="depth-2"><a href="#-ai--化工融合映射" data-for="-ai--化工融合映射">🤝 AI × 化工融合映射</a></li><li class="depth-1"><a href="#layer-4--agent-生态" data-for="layer-4--agent-生态">Layer 4 — Agent 生态</a></li><li class="depth-1"><a href="#layer-5--mlops--工程" data-for="layer-5--mlops--工程">Layer 5 — MLOps &amp; 工程</a></li><li class="depth-1"><a href="#横切-a--数据驱动方法论" data-for="横切-a--数据驱动方法论">横切 A — 数据驱动方法论</a></li><li class="depth-1"><a href="#横切-b--ai-系统属性" data-for="横切-b--ai-系统属性">横切 B — AI 系统属性</a></li><li class="depth-1"><a href="#tier完备度分级" data-for="tier完备度分级">Tier（完备度）分级</a></li><li class="depth-1"><a href="#已确认的策略" data-for="已确认的策略">已确认的策略</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="./static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="./static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="./static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="./static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="./postscript-503771fb.js" type="module" data-persist="true"></script></html>
